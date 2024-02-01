@@ -1,4 +1,8 @@
-# BeatBuddy
+# BeatBuddy 🤖
+<p align="center">
+  <img src="/img/Logo.jpg" width=250/>
+</p>
+
 Proyecto realizado por [Christian Martín Díaz](https://github.com/chrismartindiaz), [Pablo Martín Trujillo](https://github.com/martintpablo) y [María Eugenia Sánchez Sánchez](https://github.com/mariasnchez).
 
 ## Descripción del proyecto
