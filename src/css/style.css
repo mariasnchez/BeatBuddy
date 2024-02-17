@@ -1,0 +1,6 @@
+#body-container {
+    background: rgb(188,48,235);
+    background: linear-gradient(0deg, rgba(188,48,235,0.26) 0%, rgba(29,3,37,1) 100%);
+    width: 100vw;
+    height: 100vh;
+}
