@@ -1,1 +1,7 @@
+[theme]
+secondaryBackgroundColor = "#f0f2f6"
+font = "sans serif"
+textColor = "Black"
 
+[client]
+showSidebarNavigation = false
