@@ -19,7 +19,7 @@ def inicio():
             <div id="inicio-beatbuddy" class="w-50 h-75 d-flex flex-column justify-content-evenly align-items-center">
                 <div id="inicio-titulo" class="w-75 fs-1 text-center text-white">Lorem Ipsum dolor</div>
                 <div id="inicio-texto" class="w-75 fs-3 text-center text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut semper, felis et elementum efficitur, velit ipsum congue tellus, sit amet placerat massa tellus at sem. </div>
-                <a id="btn-empezar" class="px-5 py-3 rounded fs-5 text-center shadow" href="https://beatbuddyapp.streamlit.app/Asistente_Musical">¡Empieza aquí!</a>
+                <a id="btn-empezar" class="px-5 py-3 rounded fs-5 text-center shadow" target="_self" href="https://beatbuddyapp.streamlit.app/Asistente_Musical">¡Empieza aquí!</a>
             </div>
         </div>
     """
