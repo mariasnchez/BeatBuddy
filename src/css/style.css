@@ -1,6 +1,75 @@
-#body-container {
+/* Body */
+[data-testid="stHeader"], [data-testid="StyledLinkIconContainer"] {
+    display: none;
+}
+[data-testid="stAppViewContainer"] {
     background: rgb(188,48,235);
     background: linear-gradient(0deg, rgba(188,48,235,0.26) 0%, rgba(29,3,37,1) 100%);
-    width: 100vw;
-    height: 100vh;
+}
+
+[data-testid="stAppViewBlockContainer"] {
+    padding: 0 !important;
+}
+
+[data-testid="stVerticalBlock"] {
+    gap: 0 !important;
+}
+
+/* Header */
+#header {
+    height: 80px;
+}
+.link-div {
+    margin-right: 5%;
+}
+.header-link {
+    color: #FFFFFF !important;
+    text-decoration: none;
+}
+.header-link:hover {
+    color: #D8D3D3 !important;
+    text-decoration: none;
+}
+
+/* Inicio */
+
+@font-face {
+    font-family: 'FrancoisOne';
+    src: url('/fonts/FrancoisOne-Regular.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'DMSans';
+    src: url('/fonts/DMSans-Regular.ttf') format('ttf');
+}
+
+#inicio-body {
+    width: 90vw;
+    height: 80vh;
+    margin: auto;
+}
+
+#btn-empezar {
+    width: 37%;
+    background-color: #946EA6;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#inicio-img {
+    max-width: 400px;
+    min-width: 300px;
+}
+
+#inicio-titulo {
+    font-family: "FrancoisOne", sans-serif;
+}
+
+#inicio-texto {
+    font-family: "DMSans", sans-serif;
+}
+
+#inicio-beatbuddy {
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
