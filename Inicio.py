@@ -3,13 +3,10 @@ from streamlit.components.v1 import components
 from funciones import *
 
 ## Configuración
-if "visibility" not in st.session_state:
-    st.session_state.visibility = "visible"
-    st.session_state.disabled = False
-    st.set_page_config(
-        page_title="BeatBuddy",
-        layout="wide"
-    )
+st.set_page_config(
+    page_title="BeatBuddy",
+    layout="wide"
+)
 
 ## Estilos
 estilos("./src/css/style.css")
