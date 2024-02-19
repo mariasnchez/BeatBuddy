@@ -6,7 +6,7 @@
 Proyecto realizado por [Christian Martín Díaz](https://github.com/chrismartindiaz), [Pablo Martín Trujillo](https://github.com/martintpablo) y [María Eugenia Sánchez Sánchez](https://github.com/mariasnchez).
 
 
-Página web: https://beatbuddyapp.streamlit.app
+Página web: 
 
 ## Índice
 
