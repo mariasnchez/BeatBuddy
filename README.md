@@ -142,3 +142,4 @@ Aquí un ejemplo con las primeras 64 imágenes (las negras son las predicciones 
 ## 6. Procesamiento Lenguaje Natural (Chatbot) <a name="6"></a>
 
 ## 7. Aplicación web <a name="7"></a>
+Prototipo: 
