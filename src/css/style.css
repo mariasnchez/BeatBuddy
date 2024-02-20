@@ -1,9 +1,8 @@
-/* Body */
+/* Streamlit */
 [data-testid="stHeader"], [data-testid="StyledLinkIconContainer"] {
     display: none;
 }
 [data-testid="stAppViewContainer"] {
-    background: rgb(188,48,235);
     background: linear-gradient(0deg, rgba(188,48,235,0.26) 0%, rgba(29,3,37,1) 100%);
 }
 
@@ -15,22 +14,46 @@
     gap: 0 !important;
 }
 
-.st-emotion-cache-13k62yr {background: rgb(255,255,255);}
+iframe {
+    color-scheme: none !important;
+    border: 1px solid black;
+    width: 70%;
+}
 
 /* Header */
 #header {
     height: 80px;
 }
+
 .link-div {
     margin-right: 5%;
 }
+
 .header-link {
     color: #FFFFFF !important;
     text-decoration: none;
+    position: relative;
 }
+
+.header-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #D8D3D3;
+    transition: all 0.3s ease-in-out;
+}
+
 .header-link:hover {
     color: #D8D3D3 !important;
     text-decoration: none;
+}
+
+.header-link:hover::after {
+    width: 100%;
+    left: 0;
 }
 
 /* Inicio */
