@@ -18,10 +18,10 @@ def fuentes():
 def header():
     return """
         <div id="header" class="d-flex justify-content-end align-items-center pe-2 pt-2">
-            <div class="link-div fs-4 me-3" style="font-family: 'DM Sans', 'Source Sans Pro'", sans-serif;"><a class="header-link" href="https://prueba-ywxahkhd6pvxdonrqv3wse.streamlit.app/Asistente_Musical" target="_self">Asistente Musical</a></div>
-            <div class="link-div fs-4 me-3" style="font-family: 'DM Sans', 'Source Sans Pro'", sans-serif;"><a class="header-link" href="https://prueba-ywxahkhd6pvxdonrqv3wse.streamlit.app/Reconocimiento_Facial" target="_self">Reconocimiento facial</a></div>
-            <div class="link-div fs-4 me-3" style="font-family: 'DM Sans', 'Source Sans Pro'", sans-serif;"><a class="header-link" href="https://prueba-ywxahkhd6pvxdonrqv3wse.streamlit.app/Chatbot" target="_self">Chatbot</a></div>
-            <div class="link-div fs-4" style="font-family: 'DM Sans', 'Source Sans Pro'", sans-serif;"><a class="header-link" href="https://prueba-ywxahkhd6pvxdonrqv3wse.streamlit.app/Sobre_Nosotros" target="_self">Sobre nosotros</a></div>
+            <div class="link-div fs-4 me-3" style="font-family: 'DM Sans', 'Source Sans Pro'", sans-serif;"><a class="header-link" href="https://beatbuddyapp.streamlit.app/Asistente_Musical" target="_self">Asistente Musical</a></div>
+            <div class="link-div fs-4 me-3" style="font-family: 'DM Sans', 'Source Sans Pro'", sans-serif;"><a class="header-link" href="https://beatbuddyapp.streamlit.app/Reconocimiento_Facial" target="_self">Reconocimiento facial</a></div>
+            <div class="link-div fs-4 me-3" style="font-family: 'DM Sans', 'Source Sans Pro'", sans-serif;"><a class="header-link" href="https://beatbuddyapp.streamlit.app/Chatbot" target="_self">Chatbot</a></div>
+            <div class="link-div fs-4" style="font-family: 'DM Sans', 'Source Sans Pro'", sans-serif;"><a class="header-link" href="https://beatbuddyapp.streamlit.app/Sobre_Nosotros" target="_self">Sobre nosotros</a></div>
         </div>
     """
 
@@ -29,12 +29,12 @@ def header2():
     return """
         <div id="header" class="d-flex justify-content-end align-items-center pe-2 pt-2">
             <div class="logo">
-                <a href="https://prueba-ywxahkhd6pvxdonrqv3wse.streamlit.app"><img src="https://beatbuddyapp.streamlit.app:443/~/+/media/cdf0488c738115d7f79bedc0dbba33fcddaf432f3e57a3d5eea75553.png" alt="Logo"></a>
+                <a href="https://beatbuddyapp.streamlit.app"><img src="https://beatbuddyapp.streamlit.app:443/~/+/media/cdf0488c738115d7f79bedc0dbba33fcddaf432f3e57a3d5eea75553.png" alt="Logo"></a>
             </div>
-            <div class="link-div fs-4 me-3" style="font-family: 'DM Sans', 'Source Sans Pro'", sans-serif;"><a class="header-link" href="https://prueba-ywxahkhd6pvxdonrqv3wse.streamlit.app/Asistente_Musical" target="_self">Asistente Musical</a></div>
-            <div class="link-div fs-4 me-3" style="font-family: 'DM Sans', 'Source Sans Pro'", sans-serif;"><a class="header-link" href="https://prueba-ywxahkhd6pvxdonrqv3wse.streamlit.app/Reconocimiento_Facial" target="_self">Reconocimiento facial</a></div>
-            <div class="link-div fs-4 me-3" style="font-family: 'DM Sans', 'Source Sans Pro'", sans-serif;"><a class="header-link" href="https://prueba-ywxahkhd6pvxdonrqv3wse.streamlit.app/Chatbot" target="_self">Chatbot</a></div>
-            <div class="link-div fs-4" style="font-family: 'DM Sans', 'Source Sans Pro'", sans-serif;"><a class="header-link" href="https://prueba-ywxahkhd6pvxdonrqv3wse.streamlit.app/Sobre_nosotros" target="_self">Sobre nosotros</a></div>
+            <div class="link-div fs-4 me-3" style="font-family: 'DM Sans', 'Source Sans Pro'", sans-serif;"><a class="header-link" href="https://beatbuddyapp.streamlit.app/Asistente_Musical" target="_self">Asistente Musical</a></div>
+            <div class="link-div fs-4 me-3" style="font-family: 'DM Sans', 'Source Sans Pro'", sans-serif;"><a class="header-link" href="https://beatbuddyapp.streamlit.app/Reconocimiento_Facial" target="_self">Reconocimiento facial</a></div>
+            <div class="link-div fs-4 me-3" style="font-family: 'DM Sans', 'Source Sans Pro'", sans-serif;"><a class="header-link" href="https://beatbuddyapp.streamlit.app/Chatbot" target="_self">Chatbot</a></div>
+            <div class="link-div fs-4" style="font-family: 'DM Sans', 'Source Sans Pro'", sans-serif;"><a class="header-link" href="https://beatbuddyapp.streamlit.app/Sobre_Nosotros" target="_self">Sobre nosotros</a></div>
         </div>
     """
 
