@@ -14,12 +14,10 @@ styles("./src/css/bootstrap.min.css")
 fuentes()
 
 ## Body
-header = header()
+header = header2()
 asistente = asistente_musical()
 
 st.markdown(header, unsafe_allow_html=True)
 st.markdown(asistente, unsafe_allow_html=True)
 
 #
-
-

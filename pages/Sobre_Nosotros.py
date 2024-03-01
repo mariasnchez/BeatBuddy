@@ -14,7 +14,7 @@ styles("./src/css/bootstrap.min.css")
 
 fuentes()
 
-header = header()
+header = header2()
 sobre_nosotros = sobre_nosotros()
 
 st.markdown(header, unsafe_allow_html=True)

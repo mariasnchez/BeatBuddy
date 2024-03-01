@@ -14,15 +14,30 @@ def fuentes():
         </head>
     """, unsafe_allow_html=True)
 
+
 def header():
     return """
-        <div id="header" class="d-flex justify-content-end align-items-center pe-5 pt-2">
-            <div class="link-div fs-4" style="font-family: 'DM Sans', 'Source Sans Pro'", sans-serif;"><a class="header-link" href="https://beatbuddyapp.streamlit.app/Asistente_Musical" target="_self">Asistente Musical</a></div>
-            <div class="link-div fs-4" style="font-family: 'DM Sans', 'Source Sans Pro'", sans-serif;"><a class="header-link" href="https://beatbuddyapp.streamlit.app/Reconocimiento_Facial" target="_self">Reconocimiento facial</a></div>
-            <div class="link-div fs-4" style="font-family: 'DM Sans', 'Source Sans Pro'", sans-serif;"><a class="header-link" href="https://beatbuddyapp.streamlit.app/Chatbot" target="_self">Chatbot</a></div>
-            <div class="link-div fs-4" style="font-family: 'DM Sans', 'Source Sans Pro'", sans-serif;"><a class="header-link" href="https://beatbuddyapp.streamlit.app/Sobre_Nosotros" target="_self">Sobre nosotros</a></div>
+        <div id="header" class="d-flex justify-content-end align-items-center pe-2 pt-2">
+            <div class="link-div fs-4 me-3" style="font-family: 'DM Sans', 'Source Sans Pro'", sans-serif;"><a class="header-link" href="https://prueba-ywxahkhd6pvxdonrqv3wse.streamlit.app/Asistente_Musical" target="_self">Asistente Musical</a></div>
+            <div class="link-div fs-4 me-3" style="font-family: 'DM Sans', 'Source Sans Pro'", sans-serif;"><a class="header-link" href="https://prueba-ywxahkhd6pvxdonrqv3wse.streamlit.app/Reconocimiento_Facial" target="_self">Reconocimiento facial</a></div>
+            <div class="link-div fs-4 me-3" style="font-family: 'DM Sans', 'Source Sans Pro'", sans-serif;"><a class="header-link" href="https://prueba-ywxahkhd6pvxdonrqv3wse.streamlit.app/Chatbot" target="_self">Chatbot</a></div>
+            <div class="link-div fs-4" style="font-family: 'DM Sans', 'Source Sans Pro'", sans-serif;"><a class="header-link" href="https://prueba-ywxahkhd6pvxdonrqv3wse.streamlit.app/Sobre_Nosotros" target="_self">Sobre nosotros</a></div>
         </div>
     """
+
+def header2():
+    return """
+        <div id="header" class="d-flex justify-content-end align-items-center pe-2 pt-2">
+            <div class="logo">
+                <a href="https://prueba-ywxahkhd6pvxdonrqv3wse.streamlit.app"><img src="https://beatbuddyapp.streamlit.app:443/~/+/media/cdf0488c738115d7f79bedc0dbba33fcddaf432f3e57a3d5eea75553.png" alt="Logo"></a>
+            </div>
+            <div class="link-div fs-4 me-3" style="font-family: 'DM Sans', 'Source Sans Pro'", sans-serif;"><a class="header-link" href="https://prueba-ywxahkhd6pvxdonrqv3wse.streamlit.app/Asistente_Musical" target="_self">Asistente Musical</a></div>
+            <div class="link-div fs-4 me-3" style="font-family: 'DM Sans', 'Source Sans Pro'", sans-serif;"><a class="header-link" href="https://prueba-ywxahkhd6pvxdonrqv3wse.streamlit.app/Reconocimiento_Facial" target="_self">Reconocimiento facial</a></div>
+            <div class="link-div fs-4 me-3" style="font-family: 'DM Sans', 'Source Sans Pro'", sans-serif;"><a class="header-link" href="https://prueba-ywxahkhd6pvxdonrqv3wse.streamlit.app/Chatbot" target="_self">Chatbot</a></div>
+            <div class="link-div fs-4" style="font-family: 'DM Sans', 'Source Sans Pro'", sans-serif;"><a class="header-link" href="https://prueba-ywxahkhd6pvxdonrqv3wse.streamlit.app/Sobre_nosotros" target="_self">Sobre nosotros</a></div>
+        </div>
+    """
+
 
 def home():
     with open("./src/js/anime.min.js", "r") as f:
@@ -169,6 +184,7 @@ def home():
 
     return my_html
 
+    
 def asistente_musical():
     return f"""
         <div id="asistente-body" class="d-flex flex-column text-white">
@@ -189,6 +205,25 @@ def asistente_musical():
             </div>
         </div>
     """
+
+def reconocimiento():
+    return f"""
+        <div id="recog-body" class="d-flex justify-content-evenly align-items-center mt-5 px-5">
+            <div id="inicio-beatbuddy" class="w-75 h-25 d-flex flex-column justify-content-evenly align-items-center">
+                <div class="w-200 fs-2 text-center text-white" style="font-family: 'DM Sans', 'Source Sans Pro'"><b>Reconocimiento facial</b></div>
+                <div id="inicio-texto" class="w-75 fs-5 text-center text-white" style="font-family: 'DM Sans', 'Source Sans Pro'">Sube una imagen o toma una foto con tu cámara para que el programa identifique tu emoción y escoja una canción acorde a tu sentimiento.</div>
+            </div>
+        </div>
+    """
+
+def prediccion(predicted_emotion):
+    return f"""
+        <div id="inicio-beatbuddy" class="w-200 h-3 d-flex flex-column justify-content-evenly align-items-center">
+            <div class="w-200 fs-4 text-center text-white">Parece ser que estás:<b> {predicted_emotion.upper()}</b></div>
+            <div class="w-200 fs-1 text-center text-white"><b>TU CANCIÓN IDEAL ES...</b></div>
+        </div>
+    """
+
 
 def sobre_nosotros():
     return f"""
@@ -218,3 +253,5 @@ def sobre_nosotros():
             </div>
         </div>
     """
+
+
