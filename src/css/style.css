@@ -1,149 +1,172 @@
 /* Streamlit */
-[data-testid="stHeader"], [data-testid="StyledLinkIconContainer"] {
-    display: none;
+[data-testid="stHeader"],
+[data-testid="StyledLinkIconContainer"] {
+  display: none;
 }
 [data-testid="stAppViewContainer"] {
-    background: linear-gradient(0deg, rgba(188,48,235,0.26) 0%, rgba(29,3,37,1) 100%) !important;
+  background: linear-gradient(
+    0deg,
+    rgba(188, 48, 235, 0.26) 0%,
+    rgba(29, 3, 37, 1) 100%
+  );
 }
 
 [data-testid="stAppViewBlockContainer"] {
-    padding: 0 !important;
+  padding: 0 !important;
 }
 
 [data-testid="stVerticalBlock"] {
-    gap: 0 !important;
+  gap: 0 !important;
 }
 
 [data-testid="stCameraInput"] {
-    width: 50vw;
+  width: 100vh;
+  margin: 0 auto;
+  margin-bottom: 8px;
+}
+
+[data-testid="stFileUploader"] {
+  width: max-content;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+[data-testid="stFileUploader"] section {
+  padding: 0;
+  float: left;
+}
+[data-testid="stFileUploader"] section > input + div {
+  display: none;
+}
+[data-testid="stFileUploader"] section + div {
+  float: right;
+  padding-top: 0;
+}
+
+[data-testid="stImage"] {
+  height: 10% !important;
+  width: auto !important;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
 iframe {
-    color-scheme: none !important;
-    border: 1px solid black;
-    width: 90vw;
-    height: 70vh;
-    margin-top: 7%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.st-emotion-cache-o4i9sp{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  color-scheme: none !important;
+  border: 1px solid black;
+  width: 70%;
 }
 
 /* Header */
 #header {
-    height: 80px;
+  height: 80px;
 }
 
 .link-div {
-    margin-right: 5%;
+  margin-right: 5%;
 }
 
-.header-link, .about-us-links {
-    color: #FFFFFF !important;
-    text-decoration: none;
-    position: relative;
+.header-link {
+  color: #ffffff !important;
+  text-decoration: none;
+  position: relative;
 }
 
 .header-link::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 50%;
-    background-color: #D8D3D3;
-    transition: all 0.3s ease-in-out;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: #d8d3d3;
+  transition: all 0.3s ease-in-out;
 }
 
-.header-link:hover, .about-us-links:hover {
-    color: #D8D3D3 !important;
-    text-decoration: none;
+.header-link:hover {
+  color: #d8d3d3 !important;
+  text-decoration: none;
 }
 
 .header-link:hover::after {
-    width: 100%;
-    left: 0;
+  width: 100%;
+  left: 0;
 }
 
 /* Inicio */
 
-@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
-
-.francois-one-regular {
-    font-family: "Francois One", sans-serif;
-    font-weight: 400;
-    font-size: 2.75em;
-    font-style: normal;
+@font-face {
+  font-family: "FrancoisOne";
+  src: url("/fonts/FrancoisOne-Regular.ttf") format("ttf");
 }
-.dm-sans-4 {
-    font-family: "DM Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-size: 1.5em;
-    font-weight: 400;
-    font-style: normal;
+
+@font-face {
+  font-family: "DMSans";
+  src: url("/fonts/DMSans-Regular.ttf") format("ttf");
 }
 
 #inicio-body {
-    width: 90vw;
-    height: 80vh;
-    margin: auto;
+  width: 90vw;
+  height: 80vh;
+  margin: auto;
 }
 
 #btn-empezar {
-    width: 37%;
-    background-color: #946EA6;
-    color: #FFFFFF;
-    text-decoration: none;
+  width: 37%;
+  background-color: #946ea6;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 #inicio-img {
-    max-width: 400px;
-    min-width: 300px;
+  max-width: 400px;
+  min-width: 300px;
 }
 
 #inicio-titulo {
-    font-family: "FrancoisOne", sans-serif;
+  font-family: "FrancoisOne", sans-serif;
 }
 
 #inicio-texto {
-    font-family: "DMSans", sans-serif;
+  font-family: "DMSans", sans-serif;
 }
 
 #inicio-beatbuddy {
-    padding-top: 3%;
-    padding-bottom: 3%;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
-/* Asistente Musical */
-
-#asistente-body {
-    width: 90vw;
-    margin: 5% auto 0 auto;
+#textopred {
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 
-/* Sobre nosotros */
-
-#about-us {
-    width: 90vw;
-    height: 70vh;
-    margin: 5% auto 0 auto;
+#recog-body {
+  height: 35vh;
 }
 
-#about-us-descrip {
-    width: 60%;
+#subir {
+  height: 10vh;
+  width: 50vh;
+  border-radius: 10px;
+  margin: 0 auto;
 }
 
-#linkedin-img {
-    max-width: 50px;
-    min-width: 40px;
+#uploadimg {
+  width: 15%;
+  margin-left: 5px;
 }
 
-#github-img {
-    max-width: 50px;
-    min-width: 40px;
+#iframeRecog {
+  width: 100vh;
+  height: 100vh;
+  margin-bottom: 2%;
+}
+
+.logo {
+    margin-right: auto;
+    margin-left: 20px; 
+}
+
+.logo img {
+    width: 65px; 
+    height: auto;
 }

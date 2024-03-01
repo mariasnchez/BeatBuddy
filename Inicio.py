@@ -1,5 +1,5 @@
 import streamlit as st
-import streamlit.components.v1 as components
+from streamlit.components.v1 import components
 from funciones import *
 
 ## Configuración
@@ -9,16 +9,15 @@ st.set_page_config(
 )
 
 ## Estilos
-styles("./src/css/style.css")
-styles("./src/css/bootstrap.min.css")
-fuentes()
+estilos("./src/css/style.css")
+estilos("./src/css/bootstrap.min.css")
 
 ## Body
 header = header()
-home = home()
+inicio = inicio()
 
 st.markdown(header, unsafe_allow_html=True)
-components.html(home)
+st.markdown(inicio, unsafe_allow_html=True)
 
 logo_png = st.image("img/LogoPNG.png")
 logo_png.empty()
