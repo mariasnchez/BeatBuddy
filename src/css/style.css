@@ -8,7 +8,7 @@
     0deg,
     rgba(188, 48, 235, 0.26) 0%,
     rgba(29, 3, 37, 1) 100%
-  );
+  ) !important;
 }
 
 [data-testid="stAppViewBlockContainer"] {
@@ -52,7 +52,17 @@
 iframe {
   color-scheme: none !important;
   border: 1px solid black;
-  width: 70%;
+  width: 90vw;
+  height: 70vh;
+  margin-top: 7%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.st-emotion-cache-o4i9sp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Header */
@@ -64,7 +74,8 @@ iframe {
   margin-right: 5%;
 }
 
-.header-link {
+.header-link,
+.about-us-links {
   color: #ffffff !important;
   text-decoration: none;
   position: relative;
@@ -81,7 +92,8 @@ iframe {
   transition: all 0.3s ease-in-out;
 }
 
-.header-link:hover {
+.header-link:hover,
+.about-us-links:hover {
   color: #d8d3d3 !important;
   text-decoration: none;
 }
@@ -91,21 +103,37 @@ iframe {
   left: 0;
 }
 
-/* Inicio */
-
-@font-face {
-  font-family: "FrancoisOne";
-  src: url("/fonts/FrancoisOne-Regular.ttf") format("ttf");
+.logo {
+  margin-right: auto;
+  margin-left: 20px;
 }
 
-@font-face {
-  font-family: "DMSans";
-  src: url("/fonts/DMSans-Regular.ttf") format("ttf");
+.logo img {
+  width: 65px;
+  height: auto;
+}
+
+/* Inicio */
+
+@import url("https://fonts.googleapis.com/css2?family=Francois+One&display=swap");
+
+.francois-one-regular {
+  font-family: "Francois One", sans-serif;
+  font-weight: 400;
+  font-size: 2.75em;
+  font-style: normal;
+}
+.dm-sans-4 {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1.5em;
+  font-weight: 400;
+  font-style: normal;
 }
 
 #inicio-body {
   width: 90vw;
-  height: 80vh;
+  height: 70vh;
   margin: auto;
 }
 
@@ -134,6 +162,8 @@ iframe {
   padding-bottom: 3%;
 }
 
+/* Asistente Musical */
+
 #textopred {
   padding-top: 10%;
   padding-bottom: 10%;
@@ -161,12 +191,24 @@ iframe {
   margin-bottom: 2%;
 }
 
-.logo {
-    margin-right: auto;
-    margin-left: 20px; 
+/* Sobre nosotros */
+
+#about-us {
+  width: 90vw;
+  height: 70vh;
+  margin: 5% auto 0 auto;
 }
 
-.logo img {
-    width: 65px; 
-    height: auto;
+#about-us-descrip {
+  width: 60%;
+}
+
+#linkedin-img {
+  max-width: 50px;
+  min-width: 40px;
+}
+
+#github-img {
+  max-width: 50px;
+  min-width: 40px;
 }

@@ -14,8 +14,9 @@ st.set_page_config(
 )
 
 ## Estilos
-estilos("./src/css/style.css")
-estilos("./src/css/bootstrap.min.css")
+styles("./src/css/style.css")
+styles("./src/css/bootstrap.min.css")
+fuentes()
 
 ## Body
 header = header2()
