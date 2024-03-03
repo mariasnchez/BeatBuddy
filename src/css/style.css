@@ -49,13 +49,12 @@
   margin-top: 20px;
 }
 
-iframe[data-testid="stIFrame"] {
+[data-testid="stIFrame"] {
   color-scheme: none !important;
   width: 100% !important;
-  height: 100vh;
-  margin: 0 auto;
+  height: 100vh !important;
+  margin: 0 auto !important;
 }
-
 .st-emotion-cache-o4i9sp {
   display: flex;
   justify-content: center;
@@ -115,11 +114,12 @@ iframe[data-testid="stIFrame"] {
 @import url("https://fonts.googleapis.com/css2?family=Francois+One&display=swap");
 
 .francois-one-regular {
-  font-family: "Francois One", sans-serif;
+  font-family: "Francois One", sans-serif !important;
   font-weight: 400;
   font-size: 2.75em;
   font-style: normal;
 }
+
 .dm-sans-4 {
   font-family: "DM Sans", sans-serif;
   font-optical-sizing: auto;
