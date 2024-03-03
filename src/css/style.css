@@ -51,10 +51,9 @@
 
 iframe[data-testid="stIFrame"] {
   color-scheme: none !important;
-  width: 90vw !important;
-  height: 90vh;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100% !important;
+  height: 100vh; 
+  margin: 0 auto;
 }
 
 .st-emotion-cache-o4i9sp {

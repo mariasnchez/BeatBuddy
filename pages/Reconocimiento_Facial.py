@@ -91,24 +91,23 @@ def cancion(predicted_emotion, random_feliz, random_triste, random_neutral):
 
 
 # Streamlit
-# Foto cámara
-camara = st.camera_input("")
+camara = None
+subida = None
 
-# Foto subida
 subida = st.file_uploader("", type=["jpg", "jpeg", "png"])
 
-
-if camara is not None:
-    image = Image.open(camara)
+if subida is None:
+    camara = st.camera_input("")
+else:
+    image = Image.open(subida)
+    st.image(image)
     predicted_emotion = predict_emotion(image)
     st.markdown(prediccion(predicted_emotion), unsafe_allow_html=True)
     iframe_code = cancion(predicted_emotion, random_feliz, random_triste, random_neutral)
     st.markdown(iframe_code, unsafe_allow_html=True)
 
-
-if subida is not None:
-    image = Image.open(subida)
-    st.image(subida)
+if camara is not None:
+    image = Image.open(camara)
     predicted_emotion = predict_emotion(image)
     st.markdown(prediccion(predicted_emotion), unsafe_allow_html=True)
     iframe_code = cancion(predicted_emotion, random_feliz, random_triste, random_neutral)
