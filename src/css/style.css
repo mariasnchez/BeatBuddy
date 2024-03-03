@@ -177,14 +177,9 @@ div[data-testid="element-container"] {
 }
 
 div[data-testid="element-container"] iframe {
-  width: 400px; /* Establecer ancho fijo para el iframe */
+  width: 330px; /* Establecer ancho fijo para el iframe */
   margin: 0 auto; /* Centrar horizontalmente el iframe */
-}
-
-.container {
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
+  color: black;
 }
 
 [data-testid="stSelectbox"] {

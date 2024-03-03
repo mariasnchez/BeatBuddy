@@ -207,7 +207,7 @@ def pregunta2():
             <div id="recog-body" class="d-flex justify-content-evenly align-items-center px-5">
                 <div id="inicio-beatbuddy" class="w-75 h-25 d-flex flex-column justify-content-evenly align-items-center">
                     <div class="w-200 fs-2 text-center text-white" style="font-family: 'DM Sans', 'Source Sans Pro'"><b>PREGUNTA 2</b></div>
-                    <div id="inicio-texto" class="w-75 fs-5 text-center text-white" style="font-family: 'DM Sans', 'Source Sans Pro'">¿Prefieres motivarte o estar más tranquilo?</div>
+                    <div id="inicio-texto" class="w-75 fs-5 text-center text-white" style="font-family: 'DM Sans', 'Source Sans Pro'">¿Prefieres estar más tranquilo o motivarte?</div>
                 </div>
             </div>
         """

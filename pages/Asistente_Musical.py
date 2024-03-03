@@ -44,7 +44,6 @@ preg1 = image_select(
     ],
     captions=["Tristeza", "Felicidad"],
     return_value="index", 
-    use_container_width=False,
     key="0"
 )
 selected_mood = preg1
@@ -54,12 +53,11 @@ st.markdown(pregunta2, unsafe_allow_html=True)
 preg2 = image_select(
     label="",
     images=[
-        "https://cdn-icons-png.flaticon.com/512/3063/3063782.png",
+        "https://cdn-icons-png.flaticon.com/512/1142/1142699.png",
         "https://cdn-icons-png.flaticon.com/512/3221/3221947.png"
     ],
     captions=["Relax", "Energía"],
     return_value="index", 
-    use_container_width=False,
     key="1"
 )
 selected_motivation = preg2
