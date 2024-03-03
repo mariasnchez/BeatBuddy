@@ -14,7 +14,7 @@ def fuentes():
         </head>
     """, unsafe_allow_html=True)
 
-
+# Header
 def header():
     return """
         <div id="header" class="d-flex justify-content-end align-items-center pe-2 pt-2">
@@ -29,16 +29,16 @@ def header2():
     return """
         <div id="header" class="d-flex justify-content-end align-items-center pe-2 pt-2">
             <div class="logo">
-                <a href="https://beatbuddyapp.streamlit.app"><img src="https://beatbuddyapp.streamlit.app:443/~/+/media/cdf0488c738115d7f79bedc0dbba33fcddaf432f3e57a3d5eea75553.png" alt="Logo"></a>
+                <a href="https://beatbuddyapp.streamlit.app" target="_self"><img src="https://beatbuddyapp.streamlit.app:443/~/+/media/cdf0488c738115d7f79bedc0dbba33fcddaf432f3e57a3d5eea75553.png" alt="Logo"></a>
             </div>
             <div class="link-div fs-4 me-3" style="font-family: 'DM Sans', 'Source Sans Pro'", sans-serif;"><a class="header-link" href="https://beatbuddyapp.streamlit.app/Asistente_Musical" target="_self">Asistente Musical</a></div>
             <div class="link-div fs-4 me-3" style="font-family: 'DM Sans', 'Source Sans Pro'", sans-serif;"><a class="header-link" href="https://beatbuddyapp.streamlit.app/Reconocimiento_Facial" target="_self">Reconocimiento facial</a></div>
             <div class="link-div fs-4 me-3" style="font-family: 'DM Sans', 'Source Sans Pro'", sans-serif;"><a class="header-link" href="https://beatbuddyapp.streamlit.app/Chatbot" target="_self">Chatbot</a></div>
-            <div class="link-div fs-4" style="font-family: 'DM Sans', 'Source Sans Pro'", sans-serif;"><a class="header-link" href="https://beatbuddyapp.streamlit.app/Sobre_Nosotros" target="_self">Sobre nosotros</a></div>
+            <div class="link-div fs-4" style="font-family: 'DM Sans', 'Source Sans Pro'", sans-serif;"><a class="header-link" href="https://beatbuddyapp.streamlit.app/Sobre_nosotros" target="_self">Sobre nosotros</a></div>
         </div>
     """
 
-
+# Inicio
 def home():
     with open("./src/js/anime.min.js", "r") as f:
         animejs = f.read()
@@ -184,33 +184,58 @@ def home():
 
     return my_html
 
-    
+
+# Asistente musical    
 def asistente_musical():
     return f"""
-        <div id="asistente-body" class="d-flex flex-column text-white">
-            <div id="bloque1" class="w-50 d-flex flex-column align-items-center">
-                <span class="text-center fs-2">Pregunta 1</span>
-                <div class="">
-                    <div class="w-100 fs-4">Triste</div>
-                    <div class="w-100 fs-4">Feliz</div>
-                </div>
+        <div id="asis-body" class="d-flex justify-content-evenly align-items-center mt-5 px-5">
+            <div id="inicio-beatbuddy" class="w-75 h-25 d-flex flex-column justify-content-evenly align-items-center">
+                <div class="w-200 fs-1 text-center text-white" style="font-family: 'DM Sans', 'Source Sans Pro'"><b>Asistente musical 🎵</b></div>
+                <div id="inicio-texto" class="w-75 fs-5 text-center text-white" style="font-family: 'DM Sans', 'Source Sans Pro'">Contesta a las siguientes preguntas para poder recibir 3 recomendaciones de canciones acorde a tu ánimo y tus gustos musicales. </div>
             </div>
-            {st.divider()}
-            <div id="bloque2" class="w-50 d-flex flex-column align-items-center">
-                <span class="text-center fs-2">Pregunta 2</span>
-                <div class="">
-                    <div class="w-100 fs-4">Triste</div>
-                    <div class="w-100 fs-4">Feliz</div>
+        </div>
+        <div class="d-flex justify-content-evenly align-items-center px-5">
+            <div id="inicio-beatbuddy" class="w-75 h-25 d-flex flex-column justify-content-evenly align-items-center">
+                    <div class="w-200 fs-2 text-center text-white" style="font-family: 'DM Sans', 'Source Sans Pro'"><b>PREGUNTA 1</b></div>
+                    <div id="inicio-texto" class="w-75 fs-5 text-center text-white" style="font-family: 'DM Sans', 'Source Sans Pro'">¿Qué ánimo te representa más hoy?</div>
                 </div>
-            </div>
         </div>
     """
 
+def pregunta2():
+    return f"""
+            <div id="recog-body" class="d-flex justify-content-evenly align-items-center px-5">
+                <div id="inicio-beatbuddy" class="w-75 h-25 d-flex flex-column justify-content-evenly align-items-center">
+                    <div class="w-200 fs-2 text-center text-white" style="font-family: 'DM Sans', 'Source Sans Pro'"><b>PREGUNTA 2</b></div>
+                    <div id="inicio-texto" class="w-75 fs-5 text-center text-white" style="font-family: 'DM Sans', 'Source Sans Pro'">¿Prefieres motivarte o estar más tranquilo?</div>
+                </div>
+            </div>
+        """
+
+def pregunta3():
+    return f"""
+            <div id="recog-body" class="d-flex justify-content-evenly align-items-center px-5">
+                <div class="pregunta w-75 h-15 d-flex flex-column justify-content-evenly align-items-center">
+                    <div class="w-200 fs-2 text-center text-white" style="font-family: 'DM Sans', 'Source Sans Pro'"><b>PREGUNTA 3</b></div>
+                    <div id="inicio-texto" class="w-75 fs-5 text-center text-white" style="font-family: 'DM Sans', 'Source Sans Pro'">¿Con qué década te encuentras más familiarizado?</div>
+                </div>
+            </div>
+        """
+def textofinal():
+    return f"""
+            <div id="recog-body" class="d-flex justify-content-evenly align-items-cente mt-3 px-5">
+                <div id="inicio-beatbuddy" class="w-75 h-5 d-flex flex-column justify-content-evenly align-items-center">
+                    <div id="inicio-texto" class="w-75 fs-4 text-center text-white" style="font-family: 'DM Sans', 'Source Sans Pro'">¡Aquí tienes tres canciones que podrían sorprenderte!</div>
+                </div>
+            </div>
+        """
+
+# Reconocimiento facial
 def reconocimiento():
     return f"""
         <div id="recog-body" class="d-flex justify-content-evenly align-items-center mt-5 px-5">
             <div id="inicio-beatbuddy" class="w-75 h-25 d-flex flex-column justify-content-evenly align-items-center">
-                <div class="w-200 fs-2 text-center text-white" style="font-family: 'DM Sans', 'Source Sans Pro'"><b>Reconocimiento facial</b></div>
+                <div class="w-200 fs-1 text-center text-white" style="font-family: 'DM Sans', 'Source Sans Pro'"><b>Reconocimiento facial 👀</b></div>
                 <div id="inicio-texto" class="w-75 fs-5 text-center text-white" style="font-family: 'DM Sans', 'Source Sans Pro'">Sube una imagen o toma una foto con tu cámara para que el programa identifique tu emoción y escoja una canción acorde a tu sentimiento.</div>
             </div>
         </div>
@@ -224,7 +249,7 @@ def prediccion(predicted_emotion):
         </div>
     """
 
-
+# Sobre nosotros
 def sobre_nosotros():
     return f"""
         <div id="about-us" class="d-flex justify-content-around align-items-center">
