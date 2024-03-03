@@ -52,7 +52,7 @@
 iframe[data-testid="stIFrame"] {
   color-scheme: none !important;
   width: 100% !important;
-  height: 100vh; 
+  height: 100vh;
   margin: 0 auto;
 }
 
@@ -115,7 +115,7 @@ iframe[data-testid="stIFrame"] {
 @import url("https://fonts.googleapis.com/css2?family=Francois+One&display=swap");
 
 .francois-one-regular {
-  font-family: "Francois One", sans-serif !important;
+  font-family: "Francois One", sans-serif;
   font-weight: 400;
   font-size: 2.75em;
   font-style: normal;
@@ -172,19 +172,22 @@ iframe[data-testid="stIFrame"] {
 }
 
 div[data-testid="element-container"] {
-  text-align: center; /* Centrar los elementos dentro del contenedor */
+  text-align: center;
 }
 
 div[data-testid="element-container"] iframe {
-  width: 330px; /* Establecer ancho fijo para el iframe */
-  margin: 0 auto; /* Centrar horizontalmente el iframe */
-  color: black;
+  width: 330px;
+  height: 228px;
+  border-radius: 16px;
+  margin: 0 auto;
+  margin-bottom: 8px;
 }
 
 [data-testid="stSelectbox"] {
   width: 300px !important;
   margin: 0 auto;
-  margin-bottom: 2%;
+  margin-bottom: 4%;
+  margin-top: -30px;
 }
 
 .pregunta {
@@ -192,7 +195,9 @@ div[data-testid="element-container"] iframe {
 }
 
 #cancionesAsis {
-  margin-bottom: 80px;
+  margin-bottom: 65px;
+  width: 457px;
+  height: 234px;
 }
 
 /* Reconocimiento facial*/

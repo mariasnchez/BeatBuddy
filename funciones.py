@@ -204,7 +204,7 @@ def asistente_musical():
 
 def pregunta2():
     return f"""
-            <div id="recog-body" class="d-flex justify-content-evenly align-items-center px-5">
+            <div class="d-flex justify-content-evenly align-items-center px-5">
                 <div id="inicio-beatbuddy" class="w-75 h-25 d-flex flex-column justify-content-evenly align-items-center">
                     <div class="w-200 fs-2 text-center text-white" style="font-family: 'DM Sans', 'Source Sans Pro'"><b>PREGUNTA 2</b></div>
                     <div id="inicio-texto" class="w-75 fs-5 text-center text-white" style="font-family: 'DM Sans', 'Source Sans Pro'">¿Prefieres estar más tranquilo o motivarte?</div>
@@ -214,8 +214,8 @@ def pregunta2():
 
 def pregunta3():
     return f"""
-            <div id="recog-body" class="d-flex justify-content-evenly align-items-center px-5">
-                <div class="pregunta w-75 h-15 d-flex flex-column justify-content-evenly align-items-center">
+            <div class="d-flex justify-content-evenly align-items-center px-5">
+                <div id="inicio-beatbuddy" class="w-75 h-25 d-flex flex-column justify-content-evenly align-items-center">
                     <div class="w-200 fs-2 text-center text-white" style="font-family: 'DM Sans', 'Source Sans Pro'"><b>PREGUNTA 3</b></div>
                     <div id="inicio-texto" class="w-75 fs-5 text-center text-white" style="font-family: 'DM Sans', 'Source Sans Pro'">¿Con qué década te encuentras más familiarizado?</div>
                 </div>
@@ -223,8 +223,8 @@ def pregunta3():
         """
 def textofinal():
     return f"""
-            <div id="recog-body" class="d-flex justify-content-evenly align-items-cente mt-3 px-5">
-                <div id="inicio-beatbuddy" class="w-75 h-5 d-flex flex-column justify-content-evenly align-items-center">
+            <div id="recog-body" class="d-flex justify-content-evenly align-items-center px-5">
+                <div id="inicio-beatbuddy" class="w-75 h-3 d-flex flex-column justify-content-evenly align-items-center">
                     <div id="inicio-texto" class="w-75 fs-4 text-center text-white" style="font-family: 'DM Sans', 'Source Sans Pro'">¡Aquí tienes tres canciones que podrían sorprenderte!</div>
                 </div>
             </div>
@@ -278,5 +278,3 @@ def sobre_nosotros():
             </div>
         </div>
     """
-
-
