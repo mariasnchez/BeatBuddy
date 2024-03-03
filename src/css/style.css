@@ -49,12 +49,10 @@
   margin-top: 20px;
 }
 
-iframe {
+iframe[data-testid="stIFrame"] {
   color-scheme: none !important;
-  border: 1px solid black;
-  width: 90vw;
-  height: 70vh;
-  margin-top: 7%;
+  width: 90vw !important;
+  height: 90vh;
   margin-left: auto;
   margin-right: auto;
 }
@@ -118,7 +116,7 @@ iframe {
 @import url("https://fonts.googleapis.com/css2?family=Francois+One&display=swap");
 
 .francois-one-regular {
-  font-family: "Francois One", sans-serif;
+  font-family: "Francois One", sans-serif !important;
   font-weight: 400;
   font-size: 2.75em;
   font-style: normal;
@@ -169,6 +167,41 @@ iframe {
   padding-bottom: 10%;
 }
 
+#asis-body {
+  height: 35vh;
+  font-family: "Francois One", sans-serif;
+}
+
+div[data-testid="element-container"] {
+  text-align: center; /* Centrar los elementos dentro del contenedor */
+}
+
+div[data-testid="element-container"] iframe {
+  width: 400px; /* Establecer ancho fijo para el iframe */
+  margin: 0 auto; /* Centrar horizontalmente el iframe */
+}
+
+.container {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+[data-testid="stSelectbox"] {
+  width: 300px !important;
+  margin: 0 auto;
+  margin-bottom: 2%;
+}
+
+.pregunta {
+  padding-top: 3%;
+}
+
+#cancionesAsis {
+  margin-bottom: 80px;
+}
+
+/* Reconocimiento facial*/
 #recog-body {
   height: 35vh;
 }
