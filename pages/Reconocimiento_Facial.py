@@ -7,6 +7,7 @@ from spotipy.oauth2 import SpotifyClientCredentials
 import random
 from streamlit.components.v1 import components
 from funciones import *
+import os
 
 st.set_page_config(
     page_title="Reconocimiento Facial",
@@ -50,7 +51,7 @@ def predict_emotion(image):
 
 
 # Autenticación API Spotify
-client_credentials_manager = SpotifyClientCredentials(client_id = '78e0692de81c4fe8a7396f957bf26b5b', client_secret = 'e4015fbc83974f59957a91a456e59c42')
+client_credentials_manager = SpotifyClientCredentials(st.secrets["client_id"], st.secrets["client_secret"])
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 
 # Obtener canción aleatoria
