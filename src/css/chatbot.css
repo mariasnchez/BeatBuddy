@@ -1,0 +1,25 @@
+div[data-testid="element-container"] iframe {
+    width: 76px !important;
+    height: 62px !important;
+    margin: 2rem auto 0 auto !important;
+    color: black !important;
+    border-radius: 5px !important;
+    position: fixed;
+    bottom: 3vh;
+    z-index: 10;
+}
+
+div[data-testid="element-container"] {
+    text-align: start !important;
+    display: flex;
+    justify-content: center;
+}
+
+[data-testid="stVerticalBlock"] {
+    margin-bottom: 2vh;
+}
+
+.st-emotion-cache-1dgsum0 {
+    font-size: 1.2rem;
+    background-color: lightgray;
+}
