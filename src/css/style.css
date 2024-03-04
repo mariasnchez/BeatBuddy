@@ -282,6 +282,10 @@ div[data-testid="element-container"] iframe {
   width: 60%;
 }
 
+.about-us-links {
+  text-align: start;
+}
+
 #linkedin-img {
   max-width: 50px;
   min-width: 40px;
