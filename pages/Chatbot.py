@@ -27,6 +27,8 @@ styles("./src/css/bootstrap.min.css")
 fuentes()
 
 ## Body
+logo_png = st.image("img/LogoPNG.png")
+logo_png.empty()
 header = header2()
 
 st.markdown(header, unsafe_allow_html=True)
