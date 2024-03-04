@@ -171,7 +171,7 @@ def home():
             <div id="inicio-beatbuddy">
                 <div id="inicio-titulo" class="francois-one-regular ml6">
                     <span class="text-wrapper">
-                        <span class="letters">¡Bienvenido a tu experiencia musical única!</span>
+                        <span class="letters">¡Bienvenido!</span>
                     </span>
                 </div>
                 <div id="inicio-descrip" class="dm-sans-4"> ¿Listo para dejarte sorprender? Nuestro asistente musical te guiará para descubrir tu canción ideal.  Además, con nuestro reconocimiento facial, te conectaremos con la canción perfecta para complementar tus emociones del momento. Y si quieres explorar más, nuestro chatbot musical está aquí para ti.</div>
