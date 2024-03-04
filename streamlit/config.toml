@@ -1,0 +1,46 @@
+[client]
+showSidebarNavigation = false
+
+[theme]
+base="light"
+
+[global]
+# If True, will show a warning when you run a Streamlit-enabled script via "python my_script.py".
+showWarningOnDirectExecution = true
+
+[logger]
+# Level of logging: 'error', 'warning', 'info', or 'debug'.
+level = "debug"
+
+[runner]
+# Allows you to type a variable or string by itself in a single line of Python code to write it to the app.
+magicEnabled = true
+
+[server]
+# List of folders that should not be watched for changes. Relative paths will be taken as relative to the current working directory.
+folderWatchBlacklist = ['']
+
+# If false, will attempt to open a browser window on start.
+headless = true
+
+# Immediately share the app in such a way that enables live monitoring, and post-run analysis.
+liveSave = false
+
+# Automatically rerun script when the file is modified on disk.
+runOnSave = false
+
+# The port where the server will listen for client and browser connections.
+port = 80
+
+# Enables support for Cross-Origin Request Sharing, for added security.
+enableCORS = false
+
+[browser]
+# Internet address of the server that the browser should connect to. Can be IP address or DNS name.
+serverAddress = "0.0.0.0"
+
+# Whether to send usage statistics to Streamlit.
+gatherUsageStats = true
+
+# Port that the browser should use to connect to the server when in liveSave mode.
+serverPort = 80
