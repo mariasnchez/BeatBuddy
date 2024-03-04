@@ -49,16 +49,21 @@
   margin-top: 20px;
 }
 
-[data-testid="stIFrame"] {
+iframe[data-testid="stIFrame"] {
   color-scheme: none !important;
   width: 100% !important;
   height: 100vh !important;
   margin: 0 auto !important;
 }
+
 .st-emotion-cache-o4i9sp {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.st-emotion-cache-z5fcl4 {
+  padding: 0 !important;
 }
 
 /* Header */
@@ -119,7 +124,6 @@
   font-size: 2.75em;
   font-style: normal;
 }
-
 .dm-sans-4 {
   font-family: "DM Sans", sans-serif;
   font-optical-sizing: auto;
@@ -221,6 +225,49 @@ div[data-testid="element-container"] iframe {
   width: 100vh;
   height: 100vh;
   margin-bottom: 2%;
+}
+
+/* Chatbot */
+
+.st-emotion-cache-4oy321 {
+  padding: 1rem;
+}
+
+.st-emotion-cache-5rimss {
+  margin: 0;
+}
+
+.st-emotion-cache-1c7y2kd { /* Mensajes usuario */
+  display: none;
+}
+
+.st-emotion-cache-4oy321 { /* Mensajes bot */
+  background-color: rgb(150, 137, 157);
+  width: 50%;
+  margin: 0.5rem auto 0 auto;
+}
+
+.st-emotion-cache-5rimss { /* Texto del mensaje del bot */
+  color: white;
+}
+
+#barra_chat_container {
+  position: fixed;
+  bottom: 5%;
+  padding: 1rem;
+  width: 100%;
+  height: 80px;
+}
+
+#barra_chat { /* Barra chat */
+  width: 70%;
+  background-color: rgba(253, 253, 253, 0.39);
+  margin: auto;
+  height: 100%;
+}
+
+.st-emotion-cache-1gj0fb1 {
+  width: inherit;
 }
 
 /* Sobre nosotros */
