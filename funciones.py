@@ -171,10 +171,10 @@ def home():
             <div id="inicio-beatbuddy">
                 <div id="inicio-titulo" class="francois-one-regular ml6">
                     <span class="text-wrapper">
-                        <span class="letters">Lorem Ipsum dolor</span>
+                        <span class="letters">¡Bienvenido a tu experiencia musical única!</span>
                     </span>
                 </div>
-                <div id="inicio-descrip" class="dm-sans-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut semper, felis et elementum efficitur, velit ipsum congue tellus, sit amet placerat massa tellus at sem. </div>
+                <div id="inicio-descrip" class="dm-sans-4"> ¿Listo para dejarte sorprender? Nuestro asistente musical te guiará para descubrir tu canción ideal.  Además, con nuestro reconocimiento facial, te conectaremos con la canción perfecta para complementar tus emociones del momento. Y si quieres explorar más, nuestro chatbot musical está aquí para ti.</div>
                 <a id="btn-empezar" class="dm-sans-4" href="https://beatbuddyapp.streamlit.app/Asistente_Musical">¡Empieza aquí!</a>
             </div>
         </div>
@@ -233,7 +233,7 @@ def textofinal():
 # Reconocimiento facial
 def reconocimiento():
     return f"""
-        <div id="recog-body" class="d-flex justify-content-evenly align-items-center mt-5 px-5">
+        <div id="recog-body" class="d-flex justify-content-evenly align-items-center px-5">
             <div id="inicio-beatbuddy" class="w-75 h-25 d-flex flex-column justify-content-evenly align-items-center">
                 <div class="w-200 fs-1 text-center text-white" style="font-family: 'DM Sans', 'Source Sans Pro'"><b>Reconocimiento facial 👀</b></div>
                 <div id="inicio-texto" class="w-75 fs-5 text-center text-white" style="font-family: 'DM Sans', 'Source Sans Pro'">Sube una imagen o toma una foto con tu cámara para que el programa identifique tu emoción y escoja una canción acorde a tu sentimiento.</div>
@@ -249,31 +249,41 @@ def prediccion(predicted_emotion):
         </div>
     """
 
+#ChatBot
+def chatbot():
+    return f"""
+        <div id="recog-body" class="d-flex justify-content-evenly align-items-center px-5">
+            <div id="inicio-beatbuddy" class="w-75 h-20 d-flex flex-column justify-content-evenly align-items-center">
+                <div class="w-200 fs-1 text-center text-white" style="font-family: 'DM Sans', 'Source Sans Pro'"><b>BeatBuddy Chat💬</b></div>
+            </div>
+        </div>
+    """
+
 # Sobre nosotros
 def sobre_nosotros():
     return f"""
         <div id="about-us" class="d-flex justify-content-around align-items-center">
             <div id="about-us-descrip" class="h-75 d-flex align-items-center">
-                <span class="text-white fs-4 dm-sans-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut semper, felis et elementum efficitur, velit ipsum congue tellus, sit amet placerat massa tellus at sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut semper, felis et elementum efficitur, velit ipsum congue tellus, sit amet placerat massa tellus at sem.  </span>
+                <span class="text-white fs-4 dm-sans-4">Somos Christian Martín Díaz, Pablo Martín Trujillo y María Eugenia Sánchez Sánchez, estudiantes del CPIFP Alan Turing de Málaga y este es nuestro Trabajo Fin de Máster de Inteligencia Artificial y Big Data. Estamos aquí para ayudarte a descubrir nuevas canciones y conectarte con la música de una manera completamente nueva.  </span>
             </div>
             <div class="w-25 h-50 d-flex flex-column justify-content-around align-items-center">
-                <div id="linkedin-div" class="d-flex flex-column justify-content-start">
+                <div id="linkedin-div" class="d-flex flex-column justify-content-start align-items-center">
                     <div class="d-flex align-items-center">
                         <img id="linkedin-img" src="https://beatbuddyapp.streamlit.app:443/~/+/media/ff9bf60bd47e2d8590057ce1913f1eb466c7a4b458d2d78fd7a18c8c.png" alt="Linkedin"/>
                         <span class="text-white fs-4 ps-1">Linkedin</span>
                     </div>
-                    <a class="about-us-links fs-5 ps-1 pt-1" href="https://www.linkedin.com/in/itsupportspecialist-sysadmin-christianmd/">Christian Martín Díaz</a>
-                    <a class="about-us-links fs-5 ps-1 pt-1" href="https://www.linkedin.com/in/maria-eugeniasanchez/">María Eugenia Sánchez Sánchez</a>
-                    <a class="about-us-links fs-5 ps-1 pt-1" href="https://www.linkedin.com/in/pablo-mart%C3%ADn-trujillo/">Pablo Martín Trujillo</a>
+                    <a class="d-flex about-us-links fs-5 ps-1 pt-1" href="https://www.linkedin.com/in/itsupportspecialist-sysadmin-christianmd/">Christian</a>
+                    <a class="d-flex about-us-links fs-5 ps-1 pt-1" href="https://www.linkedin.com/in/maria-eugeniasanchez/">María Eugenia</a>
+                    <a class="d-flex about-us-links fs-5 ps-1 pt-1" href="https://www.linkedin.com/in/pablo-mart%C3%ADn-trujillo/">Pablo</a>
                 </div>
-                <div id="github-div" class="d-flex flex-column justify-content-start">
+                <div id="github-div" class="d-flex flex-column justify-content-start align-items-center">
                     <div class="d-flex align-items-center">
                         <img id="github-img" src="https://beatbuddyapp.streamlit.app:443/~/+/media/d96c7815c16b6bb69483387073e3a78b19728b28d57e1d916101759e.png" alt="Github"/>
                         <span class="text-white fs-4 ps-1">Github</span>
                     </div>
-                    <a class="about-us-links fs-5 ps-1 pt-1" href="https://github.com/chrismartindiaz">Christian Martín Díaz</a>
-                    <a class="about-us-links fs-5 ps-1 pt-1" href="https://github.com/mariasnchez">María Eugenia Sánchez Sánchez</a>
-                    <a class="about-us-links fs-5 ps-1 pt-1" href="https://github.com/martintpablo">Pablo Martín Trujillo</a>
+                    <a class="d-flex about-us-links fs-5 ps-1 pt-1" href="https://github.com/chrismartindiaz">Christian</a>
+                    <a class="d-flex about-us-links fs-5 ps-1 pt-1" href="https://github.com/mariasnchez">María Eugenia</a>
+                    <a class="d-flex about-us-links fs-5 ps-1 pt-1" href="https://github.com/martintpablo">Pablo</a>
                 </div>
             </div>
         </div>
