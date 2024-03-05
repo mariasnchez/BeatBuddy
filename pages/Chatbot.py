@@ -118,7 +118,7 @@ if len(audio):
         if lang == 'es':
             tts = gTTS(gemini_response.text, lang='es', tld="cl")
         else:
-            tts = gTTS(gemini_response.text, lang='en')
+            tts = gTTS(gemini_response.text, lang='en')  # Cambia 'en' por 'es' cuando el idioma seleccionado sea inglés
         with NamedTemporaryFile(suffix=".mp3") as temp:
             tempname = temp.name
             tts.save(tempname)
