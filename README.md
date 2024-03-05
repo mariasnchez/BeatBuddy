@@ -142,4 +142,15 @@ Aquí un ejemplo con las primeras 64 imágenes (las negras son las predicciones 
 ## 6. Procesamiento Lenguaje Natural (Chatbot) <a name="6"></a>
 
 ## 7. Aplicación web <a name="7"></a>
+
+Nuestra página ha sido desarrollada en Streamlit.
+
+Se han usado tecnologías como `HTML`, `CSS`, `JavaScript` y `Bootstrap`. También hemos usado `components.html()` de Streamlit, donde podemos utilizar `Animejs`, una librería de JavaScript para realizar animaciones. 
+
+Junto a todo esto, encontramos componentes de Streamlit como `streamlit-image-select`, que nos permite crear una galería de imágenes donde seleccionar una, como si de un checkbox se tratase, y `streamlit-audiorecorder`, que nos ayuda a comunicarnos con nuestro VoiceBot mediante voz.
+
+A la hora de aplicar estilos, podemos hacerlo mediante `st.markdown(<html>, unsafe_allow_html=True)`. Para no llenar los archivos de las páginas con mucho código, hemos creado un archivo llamado `funciones.py`, donde tenemos funciones que devuelven un código `html` en un string, que luego metemos en `st.markdown()`.
+
+He aquí algunos ejemplos:
+
 Prototipo: 
