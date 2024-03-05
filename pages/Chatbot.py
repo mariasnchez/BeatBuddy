@@ -100,12 +100,14 @@ Géneros
 Décadas musicales
 Estados de ánimo
 Preguntas musicales
+
 Puedo responder a tus preguntas sobre música, siempre que estén relacionadas con las recomendaciones de canciones.
 Ten en cuenta:
 
 No puedo responder a preguntas que no estén relacionadas con las recomendaciones de canciones.
 No puedo realizar acciones como reproducir música o abrir enlaces.
 No usaré negrita ni cursiva en mis respuestas.
+
 Idiomas:
 
 Puedo responder en español e inglés.
@@ -146,7 +148,7 @@ if len(audio):
         if lang == 'es':
             tts = gTTS(gemini_response.text, lang='es', tld="cl")
         else:
-            tts = gTTS(gemini_response.text, lang=lang)
+            tts = gTTS(gemini_response.text, lang='en')
         with NamedTemporaryFile(suffix=".mp3") as temp:
             tempname = temp.name
             tts.save(tempname)
