@@ -149,8 +149,25 @@ Se han usado tecnologías como `HTML`, `CSS`, `JavaScript` y `Bootstrap`. Tambi�
 
 Junto a todo esto, encontramos componentes de Streamlit como `streamlit-image-select`, que nos permite crear una galería de imágenes donde seleccionar una, como si de un checkbox se tratase, y `streamlit-audiorecorder`, que nos ayuda a comunicarnos con nuestro VoiceBot mediante voz.
 
-A la hora de aplicar estilos, podemos hacerlo mediante `st.markdown(<html>, unsafe_allow_html=True)`. Para no llenar los archivos de las páginas con mucho código, hemos creado un archivo llamado `funciones.py`, donde tenemos funciones que devuelven un código `html` en un string, que luego metemos en `st.markdown()`.
+A la hora de aplicar estilos, podemos hacerlo mediante `st.markdown(<html>, unsafe_allow_html=True)`. Para no llenar los archivos de las páginas con mucho código, hemos creado un archivo llamado `funciones.py`, que importamos en las páginas, donde tenemos funciones que devuelven un código `html` en un string, que luego metemos en `st.markdown()` para que las cargue en la página.
 
-He aquí algunos ejemplos:
+He aquí algunos ejemplos para:
+* Cargar los estilos:
+  `funciones.py`
+  <img src="/img/style_function.png"/>
+  `Inicio.py` o otras páginas
+  <img src="/img/cargar_style.png"/>
+  
+* Cargar las fuentes:
+  `funciones.py`
+  <img src="/img/fuentes_function.png"/>
+  `Inicio.py` o otras páginas
+  <img src="/img/cargar_fuentes.png"/>
 
+* Cargar partes de la página, como por ejemplo el header:
+  `funciones.py`
+  <img src="/img/header_function.png"/>
+  `Inicio.py` o otras páginas
+  <img src="/img/cargar_header.png"/>
+  
 Prototipo: 
