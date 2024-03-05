@@ -245,7 +245,7 @@ def reconocimiento():
 
 def prediccion(predicted_emotion):
     return f"""
-        <div id="inicio-beatbuddy" class="w-200 h-3 d-flex flex-column justify-content-evenly align-items-center">
+        <div class="w-200 h-3 m-5 d-flex flex-column justify-content-evenly align-items-center">
             <div class="w-200 fs-4 text-center text-white">Parece ser que estás:<b> {predicted_emotion.upper()}</b></div>
             <div class="w-200 fs-1 text-center text-white"><b>TU CANCIÓN IDEAL ES...</b></div>
         </div>

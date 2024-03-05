@@ -68,7 +68,7 @@ iframe[data-testid="stIFrame"] {
 
 /* Header */
 #header {
-  height: 8vh;
+  height: 80px;
 }
 
 .link-div {
