@@ -153,21 +153,35 @@ A la hora de aplicar estilos, podemos hacerlo mediante `st.markdown(<html>, unsa
 
 He aquí algunos ejemplos para:
 * Cargar los estilos:
+  
   `funciones.py`
+  
   <img src="/img/style_function.png"/>
+  
   `Inicio.py` o otras páginas
+  
   <img src="/img/cargar_style.png"/>
   
 * Cargar las fuentes:
+  
   `funciones.py`
+  
   <img src="/img/fuentes_function.png"/>
+  
   `Inicio.py` o otras páginas
+  
   <img src="/img/cargar_fuentes.png"/>
 
 * Cargar partes de la página, como por ejemplo el header:
+  
   `funciones.py`
+  
   <img src="/img/header_function.png"/>
+  
   `Inicio.py` o otras páginas
+  
   <img src="/img/cargar_header.png"/>
+
+Así es como estructuramos la página web BeatBuddy.
   
 Prototipo: 
