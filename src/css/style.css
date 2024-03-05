@@ -289,7 +289,7 @@ div[data-testid="element-container"] iframe {
 }
 
 .about-us-links {
-  text-align: start;
+  text-align: start !important;
 }
 
 #linkedin-img {
