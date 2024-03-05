@@ -23,7 +23,7 @@ Página web:
 * [5. Entrenamiento del modelo](#5)
   * [Asistente musical](#a5)
   * [Reconocimiento facial](#r5)
-* [6. Procesamiento Lenguaje Natural (Chatbot)](#6)
+* [6. Procesamiento Lenguaje Natural (Voicebot)](#6)
 * [7. Aplicación web](#7)
 
 
@@ -139,21 +139,21 @@ Aquí un ejemplo con las primeras 64 imágenes (las negras son las predicciones 
 
 <img src="/img/entrenamiento.png" width=/>
 
-## 6. Procesamiento Lenguaje Natural (Chatbot) <a name="6"></a>
-Para el NPL hemos decidido hacer un **chatbot**, pero no un chatbot cualquiera, sino un **asistente de voz** similares a los de **Siri** de *Apple* o a **Alexa** de *Amazon*. Para su realización hemos usado las siguientes **librerías**:
+## 6. Procesamiento Lenguaje Natural (Voicebot) <a name="6"></a>
+Para el NPL hemos decidido hacer un **voicebot**, pero no un voicebot cualquiera, sino un **asistente de voz** similares a los de **Siri** de *Apple* o a **Alexa** de *Amazon*. Para su realización hemos usado las siguientes **librerías**:
 
-* **Google Generative AI**: Es el **motor** del chatbot, aporta la funcionalidad de realizar y responder preguntas de forma interactiva con un **prompt adecuado** para que trabaje de forma correcta.
+* **Google Generative AI**: Es el **motor** del voicebot, aporta la funcionalidad de realizar y responder preguntas de forma interactiva con un **prompt adecuado** para que trabaje de forma correcta.
 * **TempFile**: Se va a encargar de **almacenar temporalmente** las **grabaciones de voz** durante la ejecución del asistente para a posteriori, **reproducirlas al usuario**.
 * **audiorecorder**: Facilita la **grabación de audios** en **Streamlit**, ésta librería se encargará de **capturar y procesar** las **grabaciones de voz** de **entrada** del usuario. 
 * **Whisper**: Es el encargado de una vez se ha **realizado y almacenado temporalmente el audio**, **transcribirlo** convirtiéndolo en **texto** para que lo **entienda** el **asistente** y **genere** el **prompt**.
 * **gTTS**: Una vez **generado el prompt**, lo **último** que queda es **convertir la respuesta proporcionada** de texto **en audio**, éste audio será **reproducible y pausable** cuando usuario quiera. Además, podrá **cambiar la velocidad de reproducción**.
 
-**¿Cómo hemos realizado el Chatbot?**
+**¿Cómo hemos realizado el Voicebot?**
 1. En primer lugar, hemos llamado a nuestra **API Key de Google Gemini-Pro**.
 
 ![image](https://github.com/mariasnchez/BeatBuddy/assets/146923531/aa5527ee-874b-42d1-bc22-c790174694ea)
 
-2. A continuación, deberemos de **inicializar** el Chatbot, para ello, crearemos un **prompt inicial** que moldeará la **estructura** del asistente y crearemos un **historial** que irá **almacenando respuestas**.
+2. A continuación, deberemos de **inicializar** el Voicebot, para ello, crearemos un **prompt inicial** que moldeará la **estructura** del asistente y crearemos un **historial** que irá **almacenando respuestas**.
 
 ![image](https://github.com/mariasnchez/BeatBuddy/assets/146923531/43b5e45a-32d1-4ee2-8721-e4b99fb85c39)
 
