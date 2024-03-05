@@ -149,19 +149,19 @@ Para el NPL hemos decidido hacer un **chatbot**, pero no un chatbot cualquiera, 
 * **gTTS**: Una vez **generado el prompt**, lo **último** que queda es **convertir la respuesta proporcionada** de texto **en audio**, éste audio será **reproducible y pausable** cuando usuario quiera. Además, podrá **cambiar la velocidad de reproducción**.
 
 **¿Cómo hemos realizado el Chatbot?**
-1. En primer lugar, hemos llamado a nuestra API Key de Google Gemini-Pro
+1. En primer lugar, hemos llamado a nuestra **API Key de Google Gemini-Pro**.
 
 ![image](https://github.com/mariasnchez/BeatBuddy/assets/146923531/aa5527ee-874b-42d1-bc22-c790174694ea)
 
-2. A continuación, deberemos de inicializar el Chatbot, para ello, crearemos un prompt inicial que moldeará la estructura del asistente y crearemos un historial que irá almacenando respuestas.
+2. A continuación, deberemos de **inicializar** el Chatbot, para ello, crearemos un **prompt inicial** que moldeará la **estructura** del asistente y crearemos un **historial** que irá **almacenando respuestas**.
 
 ![image](https://github.com/mariasnchez/BeatBuddy/assets/146923531/43b5e45a-32d1-4ee2-8721-e4b99fb85c39)
 
-3. Creamos el botón para grabar el audio de entrada del usuario y un selector para el idioma que desee realizar la consulta del usuario. Por último, establecemos el modelo de Whisper Base puesto que es el más completo para enviar audios de unos 10 segundos. 
+3. Creamos el **botón** para **grabar** el **audio** de entrada del usuario y un **selector** para el **idioma** que desee **realizar la consulta** del **usuario**. Por último, establecemos el modelo de **Whisper Base** puesto que es **el más completo** para enviar audios de unos 10 segundos. 
 
 ![image](https://github.com/mariasnchez/BeatBuddy/assets/146923531/7d6f7ac0-bba3-483b-b5c6-ca1da8275e28)
 
-4. En caso de que el audio se grabe de forma correcta y su duración sea mayor a 0 milisegundos se guardará temporalmente para por último reproducir la respuesta generada del prompt con gTTS y reproducirla automáticamente.
+4. En caso de que el **audio** se grabe de forma **correcta** y su duración sea mayor a 0 milisegundos se **guardará temporalmente** para por último **reproducir la respuesta** generada del **prompt** con **gTTS** y **reproducirla automáticamente**.
 
 ![image](https://github.com/mariasnchez/BeatBuddy/assets/146923531/d33b1b17-5f7d-455a-adfb-8c8ec2ac96e8)
 
