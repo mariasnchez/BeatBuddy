@@ -142,6 +142,7 @@ Aquí un ejemplo con las primeras 64 imágenes (las negras son las predicciones 
 ## 6. Procesamiento Lenguaje Natural (Chatbot) <a name="6"></a>
 
 ## 7. Aplicación web <a name="7"></a>
+El prototipo de la web lo diseñamos en Figma que se puede ver [aquí](https://www.figma.com/file/R5yJphUSRoNuWchBIt2ZaH/TFM?type=design&node-id=0-1&mode=design&t=aop7T6jbd598DzHx-0).
 
 Nuestra página ha sido desarrollada en Streamlit.
 
@@ -182,6 +183,4 @@ He aquí algunos ejemplos para:
   
   <img src="/img/cargar_header.png"/>
 
-Así es como estructuramos la página web BeatBuddy.
-  
-Prototipo: 
+Así es como estructuramos la página web BeatBuddy. 
