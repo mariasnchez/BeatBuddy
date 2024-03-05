@@ -25,6 +25,7 @@ Página web:
   * [Reconocimiento facial](#r5)
 * [6. Procesamiento Lenguaje Natural (Chatbot)](#6)
 * [7. Aplicación web](#7)
+* [8. Porcentaje trabajo realizado](#8)
 
 
 
@@ -184,3 +185,8 @@ He aquí algunos ejemplos para:
   <img src="/img/cargar_header.png"/>
 
 Así es como estructuramos la página web BeatBuddy. 
+
+## 8. Porcentaje trabajo realizado <a name="8"></a>
+Christian: 33%  
+María: 33%  
+Pablo: 33%  
