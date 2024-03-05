@@ -23,7 +23,7 @@ Página web:
 * [5. Entrenamiento del modelo](#5)
   * [Asistente musical](#a5)
   * [Reconocimiento facial](#r5)
-* [6. Procesamiento Lenguaje Natural (Chatbot)](#6)
+* [6. Procesamiento Lenguaje Natural (Voicebot)](#6)
 * [7. Aplicación web](#7)
 * [8. Porcentaje trabajo realizado](#8)
 
@@ -140,7 +140,31 @@ Aquí un ejemplo con las primeras 64 imágenes (las negras son las predicciones 
 
 <img src="/img/entrenamiento.png" width=/>
 
-## 6. Procesamiento Lenguaje Natural (Chatbot) <a name="6"></a>
+## 6. Procesamiento Lenguaje Natural (Voicebot) <a name="6"></a>
+Para el NPL hemos decidido hacer un **voicebot**, pero no un voicebot cualquiera, sino un **asistente de voz** similares a los de **Siri** de *Apple* o a **Alexa** de *Amazon*. Para su realización hemos usado las siguientes **librerías**:
+
+* **Google Generative AI**: Es el **motor** del voicebot, aporta la funcionalidad de realizar y responder preguntas de forma interactiva con un **prompt adecuado** para que trabaje de forma correcta.
+* **TempFile**: Se va a encargar de **almacenar temporalmente** las **grabaciones de voz** durante la ejecución del asistente para a posteriori, **reproducirlas al usuario**.
+* **audiorecorder**: Facilita la **grabación de audios** en **Streamlit**, ésta librería se encargará de **capturar y procesar** las **grabaciones de voz** de **entrada** del usuario. 
+* **Whisper**: Es el encargado de una vez se ha **realizado y almacenado temporalmente el audio**, **transcribirlo** convirtiéndolo en **texto** para que lo **entienda** el **asistente** y **genere** el **prompt**.
+* **gTTS**: Una vez **generado el prompt**, lo **último** que queda es **convertir la respuesta proporcionada** de texto **en audio**, éste audio será **reproducible y pausable** cuando usuario quiera. Además, podrá **cambiar la velocidad de reproducción**.
+
+**¿Cómo hemos realizado el Voicebot?**
+1. En primer lugar, hemos llamado a nuestra **API Key de Google Gemini-Pro**.
+
+![image](https://github.com/mariasnchez/BeatBuddy/assets/146923531/aa5527ee-874b-42d1-bc22-c790174694ea)
+
+2. A continuación, deberemos de **inicializar** el Voicebot, para ello, crearemos un **prompt inicial** que moldeará la **estructura** del asistente y crearemos un **historial** que irá **almacenando respuestas**.
+
+![image](https://github.com/mariasnchez/BeatBuddy/assets/146923531/43b5e45a-32d1-4ee2-8721-e4b99fb85c39)
+
+3. Creamos el **botón** para **grabar** el **audio** de entrada del usuario y un **selector** para el **idioma** que desee **realizar la consulta** del **usuario**. Por último, establecemos el modelo de **Whisper Base** puesto que es **el más completo** para enviar audios de unos 10 segundos. 
+
+![image](https://github.com/mariasnchez/BeatBuddy/assets/146923531/7d6f7ac0-bba3-483b-b5c6-ca1da8275e28)
+
+4. En caso de que el **audio** se grabe de forma **correcta** y su duración sea mayor a 0 milisegundos se **guardará temporalmente** para por último **reproducir la respuesta** generada del **prompt** con **gTTS** y **reproducirla automáticamente**.
+
+![image](https://github.com/mariasnchez/BeatBuddy/assets/146923531/d33b1b17-5f7d-455a-adfb-8c8ec2ac96e8)
 
 ## 7. Aplicación web <a name="7"></a>
 El prototipo de la web lo diseñamos en Figma que se puede ver [aquí](https://www.figma.com/file/R5yJphUSRoNuWchBIt2ZaH/TFM?type=design&node-id=0-1&mode=design&t=aop7T6jbd598DzHx-0).
