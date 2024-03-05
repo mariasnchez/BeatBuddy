@@ -145,7 +145,7 @@ Aquí un ejemplo con las primeras 64 imágenes (las negras son las predicciones 
 
 Nuestra página ha sido desarrollada en Streamlit.
 
-Se han usado tecnologías como `HTML`, `CSS`, `JavaScript` y `Bootstrap`. También hemos usado `components.html()` de Streamlit, donde podemos utilizar `Animejs`, una librería de JavaScript para realizar animaciones. 
+Se han usado tecnologías como `HTML`, `CSS`, `JavaScript` y `Bootstrap`. También hemos usado `components.html()` que nos permite crear componentes de Streamlit, donde podemos utilizar `Animejs`, una librería de JavaScript para realizar animaciones. 
 
 Junto a todo esto, encontramos componentes de Streamlit como `streamlit-image-select`, que nos permite crear una galería de imágenes donde seleccionar una, como si de un checkbox se tratase, y `streamlit-audiorecorder`, que nos ayuda a comunicarnos con nuestro VoiceBot mediante voz.
 
