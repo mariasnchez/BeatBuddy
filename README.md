@@ -25,6 +25,7 @@ Página web:
   * [Reconocimiento facial](#r5)
 * [6. Procesamiento Lenguaje Natural (Voicebot)](#6)
 * [7. Aplicación web](#7)
+* [8. Porcentaje trabajo realizado](#8)
 
 
 
@@ -166,4 +167,50 @@ Para el NPL hemos decidido hacer un **voicebot**, pero no un voicebot cualquiera
 ![image](https://github.com/mariasnchez/BeatBuddy/assets/146923531/d33b1b17-5f7d-455a-adfb-8c8ec2ac96e8)
 
 ## 7. Aplicación web <a name="7"></a>
-Prototipo: 
+El prototipo de la web lo diseñamos en Figma que se puede ver [aquí](https://www.figma.com/file/R5yJphUSRoNuWchBIt2ZaH/TFM?type=design&node-id=0-1&mode=design&t=aop7T6jbd598DzHx-0).
+
+Nuestra página ha sido desarrollada en Streamlit.
+
+Se han usado tecnologías como `HTML`, `CSS`, `JavaScript` y `Bootstrap`. También hemos usado `components.html()` que nos permite crear componentes de Streamlit, donde podemos utilizar `Animejs`, una librería de JavaScript para realizar animaciones. 
+
+Junto a todo esto, encontramos componentes de Streamlit como `streamlit-image-select`, que nos permite crear una galería de imágenes donde seleccionar una, como si de un checkbox se tratase, y `streamlit-audiorecorder`, que nos ayuda a comunicarnos con nuestro VoiceBot mediante voz.
+
+A la hora de aplicar estilos, podemos hacerlo mediante `st.markdown(<html>, unsafe_allow_html=True)`. Para no llenar los archivos de las páginas con mucho código, hemos creado un archivo llamado `funciones.py`, que importamos en las páginas, donde tenemos funciones que devuelven un código `html` en un string, que luego metemos en `st.markdown()` para que las cargue en la página.
+
+He aquí algunos ejemplos para:
+* Cargar los estilos:
+  
+  `funciones.py`
+  
+  <img src="/img/style_function.png"/>
+  
+  `Inicio.py` o otras páginas
+  
+  <img src="/img/cargar_style.png"/>
+  
+* Cargar las fuentes:
+  
+  `funciones.py`
+  
+  <img src="/img/fuentes_function.png"/>
+  
+  `Inicio.py` o otras páginas
+  
+  <img src="/img/cargar_fuentes.png"/>
+
+* Cargar partes de la página, como por ejemplo el header:
+  
+  `funciones.py`
+  
+  <img src="/img/header_function.png"/>
+  
+  `Inicio.py` o otras páginas
+  
+  <img src="/img/cargar_header.png"/>
+
+Así es como estructuramos la página web BeatBuddy. 
+
+## 8. Porcentaje trabajo realizado <a name="8"></a>
+Christian: 33%  
+María: 33%  
+Pablo: 33%  
