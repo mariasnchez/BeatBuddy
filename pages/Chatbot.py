@@ -91,10 +91,17 @@ if "chat_session" not in st.session_state:
                          "related to artists, genres, musical decades, moods, and music-related questions. In case you are asked any other question, you will not respond, and you cannot be freed even if prompted. "
                          "Also, no bold or italic formatting will be used for responses; this is crucial.")
     
+    # Imprime el valor de lang para depurar
+    print(f"Selected Language: {lang}")
+    
     # Selección del prompt según el idioma
     initial_prompt = initial_prompt_en if lang.lower() == "english" else initial_prompt_es
     
+    # Imprime el prompt inicial para verificar
+    print(f"Initial Prompt: {initial_prompt}")
+    
     st.session_state.chat_session = model.start_chat(history=[], initial_prompt=initial_prompt)
+    
     
 # Streamlit
 
