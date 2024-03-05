@@ -12,6 +12,13 @@ st.set_page_config(
 styles("./src/css/style.css")
 styles("./src/css/bootstrap.min.css")
 fuentes()
+st.markdown("""
+    <style>
+        iframe[data-testid="stIFrame"] {
+            height: 86vh !important;
+        }
+    </style>
+""", unsafe_allow_html=True)
 
 ## Body
 header = header()

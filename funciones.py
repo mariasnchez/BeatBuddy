@@ -62,6 +62,7 @@ def home():
             display: flex;
             justify-content: center;
             align-content: center;
+            height: 100vh;
         }
         #inicio-body {
             width: 100%;
@@ -70,7 +71,7 @@ def home():
             display: flex;
             justify-content: space-evenly;
             align-content: center;
-            margin-top: 3rem;
+            align-items: center;
         }
         #img-container {
             width: 50%;
@@ -85,11 +86,12 @@ def home():
         }
         #inicio-beatbuddy {
             width: 50%;
+            height: 60%;
             padding-top: 3%;
             padding-bottom: 3%;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
         }
         #inicio-titulo {
