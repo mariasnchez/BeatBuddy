@@ -30,17 +30,15 @@ fuentes()
 logo_png = st.image("img/LogoPNG.png")
 logo_png.empty()
 header = header2()
+chatbot = chatbot()
 
 st.markdown(header, unsafe_allow_html=True)
+st.markdown(chatbot, unsafe_allow_html=True)
 
-# barra = barra_chat()
-# st.markdown(barra, unsafe_allow_html=True)
 
 # Chatbot
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-
 # Establecemos la API key de Gemini-Pro
-gen_ai.configure(api_key=GOOGLE_API_KEY)
+gen_ai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 model = gen_ai.GenerativeModel('gemini-pro')
 
 # Cargar el modelo de Whisper

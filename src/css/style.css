@@ -43,8 +43,8 @@
 }
 
 [data-testid="stImage"] {
-  height: 10% !important;
-  width: auto !important;
+  height: auto;
+  width: 260px !important;
   margin: 0 auto;
   margin-top: 20px;
 }
@@ -140,6 +140,7 @@ iframe[data-testid="stIFrame"] {
 
 #btn-empezar {
   width: 37%;
+  margin-top: 16px;
   background-color: #946ea6;
   color: #ffffff;
   text-decoration: none;
@@ -159,6 +160,7 @@ iframe[data-testid="stIFrame"] {
 }
 
 #inicio-beatbuddy {
+  width: 90% !important;
   padding-top: 3%;
   padding-bottom: 3%;
 }
@@ -237,17 +239,20 @@ div[data-testid="element-container"] iframe {
   margin: 0;
 }
 
-.st-emotion-cache-1c7y2kd { /* Mensajes usuario */
+.st-emotion-cache-1c7y2kd {
+  /* Mensajes usuario */
   display: none;
 }
 
-.st-emotion-cache-4oy321 { /* Mensajes bot */
+.st-emotion-cache-4oy321 {
+  /* Mensajes bot */
   background-color: rgb(150, 137, 157);
   width: 50%;
   margin: 0.5rem auto 0 auto;
 }
 
-.st-emotion-cache-5rimss { /* Texto del mensaje del bot */
+.st-emotion-cache-5rimss {
+  /* Texto del mensaje del bot */
   color: white;
 }
 
@@ -259,7 +264,8 @@ div[data-testid="element-container"] iframe {
   height: 80px;
 }
 
-#barra_chat { /* Barra chat */
+#barra_chat {
+  /* Barra chat */
   width: 70%;
   background-color: rgba(253, 253, 253, 0.39);
   margin: auto;
@@ -280,6 +286,10 @@ div[data-testid="element-container"] iframe {
 
 #about-us-descrip {
   width: 60%;
+}
+
+.about-us-links {
+  text-align: start !important;
 }
 
 #linkedin-img {
