@@ -15,6 +15,13 @@ st.set_page_config(
 styles("./src/css/style.css")
 styles("./src/css/bootstrap.min.css")
 fuentes()
+st.markdown("""
+    <style>
+        [data-testid="stButton"] {
+            margin-bottom: 5vh;
+        }
+    </style>
+""", unsafe_allow_html=True)
 
 ## Body
 logo_png = st.image("img/LogoPNG.png")
