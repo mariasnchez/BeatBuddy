@@ -188,8 +188,21 @@ Destacamos la correlación que existe entre las columnas:
 ### RECONOCIMIENTO FACIAL <a name="r3"></a>
 [Ver desarrollo](/archivos/Reconocimiento_exploracion_visualizacion.ipynb)
 
-Hemos leído el dataset, visto las claves del diccionario (`emotion`, `pixels`, `Usage`), los tipos de emociones hay (7), el número de imágenes que en cada emoción, y la distribución de emociones.
+Hemos realizado lo siguiente: 
 
+- **Leído el dataset**
+- **Visto el tipo de datos que son**  
+  ![image](https://github.com/mariasnchez/BeatBuddy/assets/91953276/5c2c7c2c-803c-43bb-b095-2a4f16f33c4d)
+  Podemos observar que no hay nulos.
+- **Visto las claves que hay en el diccionario**  
+  (`emotion`, `pixels`, `Usage`)
+- **Visto cuantos tipos de emociones hay**
+  Hay 7: array([0, 2, 4, 6, 3, 5, 1])
+- **Visto el número de fotos duplicados**  
+  ![image](https://github.com/mariasnchez/BeatBuddy/assets/91953276/7c57ab5e-9f17-47b1-b83c-d8f73df9430d)  
+- **Visualizado el números de imágenes que hay en cada emoción**   
+  ![image](https://github.com/mariasnchez/BeatBuddy/assets/91953276/6fdf88ad-803b-4f79-8264-93e88275be06)
+- **Distribución de las emociones:**  
 <img src="/img/distribucion_emociones.png" width=/>
 
 ## 4. Preparación de los datos <a name="4"></a>
@@ -239,7 +252,38 @@ Como podemos observar, han aparecido nuevas correlaciones que aportarán mucha p
 ### RECONOCIMIENTO FACIAL <a name="r4"></a>
 [Ver desarrollo](/archivos/Reconocimiento_preparacion_datos.ipynb)
 
-Hemos borrado la columna `Usage` ya que no la necesitamos, elegido las imágenes con emociones `feliz`, `triste` y `neutral` y eliminado los duplicados.
+En la preparación de los datos del reconocimiento facial hemos hecho lo siguiente:  
+- **Limpieza de datos**  
+  Eliminación columna `Usage`:  
+  ![image](https://github.com/mariasnchez/BeatBuddy/assets/91953276/48443dcc-d591-4056-bc79-a87434df80b2)  
+
+  Eliminación filas que no necesitemos, en este caso las distintas a las de emociones de feliz, triste y neutral.    
+  ![image](https://github.com/mariasnchez/BeatBuddy/assets/91953276/8687eb56-bdb0-43e9-a56c-b2245e4b62d3)  
+
+  Transormar los valores de feliz,triste y neutral a 0, 1 y 2.    
+  ![image](https://github.com/mariasnchez/BeatBuddy/assets/91953276/7eca2bc5-56d0-47ec-9ea7-558c4d7f0f21)    
+
+  Eliminación de duplicados:  
+  ![image](https://github.com/mariasnchez/BeatBuddy/assets/91953276/e2f9e225-16b7-4191-95f0-6a4b8001deb8)   
+
+  ![image](https://github.com/mariasnchez/BeatBuddy/assets/91953276/799cf2bc-f4ee-4bd0-9a5b-19d62ab5f1c2)  
+
+- **Transformar datos**  
+  Definimos las funciones para transformar las emociones y las imágenes en arrays.  
+  ![image](https://github.com/mariasnchez/BeatBuddy/assets/91953276/96f57ff3-7f23-4160-8339-6ba12f841712)  
+
+- **Separar la X y la y**  
+  ![image](https://github.com/mariasnchez/BeatBuddy/assets/91953276/74e98b26-bce2-4207-8375-f1a83968aae2)    
+
+  Ejemplo de imagen en la posición 1:  
+  ![image](https://github.com/mariasnchez/BeatBuddy/assets/91953276/d2eb22bd-f4f7-417b-b043-6c10469ea495)  
+
+- **Redimensionar las imágenes**  
+  ![image](https://github.com/mariasnchez/BeatBuddy/assets/91953276/e95538db-fabc-4978-9a3d-741f0795a4a2)  
+
+- **Etiquetar las imágenes**  
+  ![image](https://github.com/mariasnchez/BeatBuddy/assets/91953276/ff4984f8-c3cb-4195-96c8-2247d88c88dc)  
+
 
 ## 5. Entrenamiento del modelo <a name="5"></a>
 ### ASISTENTE MUSICAL <a name="a5"></a>
@@ -302,13 +346,16 @@ Podemos concluir esta gráfica afirmando que si una canción es feliz existen mu
 ### RECONOCIMIENTO FACIAL <a name="r5"></a>
 [Ver desarrollo](/archivos/Reconocimiento_preparacion_datos.ipynb)
 
-Hemos entrenado el modelo con **redes neuronales** utilizando tensorflow y keras. Ha dado aproximadamente un 73% de precisión, pero nos quedamos con el modelo ya que las predicciones que ha fallado son las que no se identifica bien la cara que han puesto. Mientras se muestre claramente la cara, el modelo lo predice correctamente.
+Hemos entrenado el modelo con **redes neuronales** utilizando tensorflow y keras.  
+![image](https://github.com/mariasnchez/BeatBuddy/assets/91953276/3b30c086-7db1-4cb8-a021-48f30bfe9681)  
 
-![73_Porciento_Reconocimiento](https://github.com/mariasnchez/BeatBuddy/assets/146923531/26c5060f-3f26-4ad2-b745-fcb7ff6bad05)
+Ha dado aproximadamente un 71% de precisión, pero nos quedamos con el modelo ya que las predicciones que ha fallado son las que no se identifica bien la cara que han puesto. Mientras se muestre claramente la cara, el modelo lo predice correctamente.    
+![image](https://github.com/mariasnchez/BeatBuddy/assets/91953276/29357225-243f-470d-912a-ccc593228258)
 
+Matriz confusión de la predicción:  
+![image](https://github.com/mariasnchez/BeatBuddy/assets/91953276/334d901d-fdbc-4bed-ac4a-a8d67cbb0aa2)
 
-Aquí un ejemplo con las primeras 64 imágenes (las negras son las predicciones correctas y las naranjas las falladas): 
-
+Aquí un ejemplo con las primeras 42 imágenes (las negras son las predicciones correctas y las naranjas las falladas):  
 <img src="/img/entrenamiento.png" width=/>
 
 ## 6. Procesamiento Lenguaje Natural (Voicebot) <a name="6"></a>
