@@ -238,7 +238,7 @@ def reconocimiento():
         <div id="recog-body" class="d-flex justify-content-evenly align-items-center px-5">
             <div id="inicio-beatbuddy" class="w-75 h-25 d-flex flex-column justify-content-evenly align-items-center">
                 <div class="w-200 fs-1 text-center text-white" style="font-family: 'DM Sans', 'Source Sans Pro'"><b>Reconocimiento facial 👀</b></div>
-                <div id="inicio-texto" class="w-75 fs-5 text-center text-white" style="font-family: 'DM Sans', 'Source Sans Pro'">Sube una imagen o toma una foto con tu cámara para que el programa identifique tu emoción y escoja una canción acorde a tu sentimiento.</div>
+                <div id="inicio-texto" class="w-75 fs-5 text-center text-white" style="font-family: 'DM Sans', 'Source Sans Pro'">Sube una imagen o toma una foto para que el programa identifique tu emoción y escoja una canción acorde a tu sentimiento. Para que sea más preciso, sube la foto con el fondo recortado o acércate todo lo posible a la cámara.</div>
             </div>
         </div>
     """
@@ -256,7 +256,7 @@ def chatbot():
     return f"""
         <div id="recog-body" class="d-flex justify-content-evenly align-items-center px-5">
             <div id="inicio-beatbuddy" class="w-75 h-20 d-flex flex-column justify-content-evenly align-items-center">
-                <div class="w-200 fs-1 text-center text-white" style="font-family: 'DM Sans', 'Source Sans Pro'"><b>BeatBuddy Chat💬</b></div>
+                <div class="w-200 fs-1 text-center text-white" style="font-family: 'DM Sans', 'Source Sans Pro'"><b>BeatBuddy Chat 💬</b></div>
             </div>
         </div>
     """
