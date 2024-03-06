@@ -231,6 +231,10 @@ div[data-testid="element-container"] iframe {
 
 /* Chatbot */
 
+#voicebot-body {
+  height: 20vh;
+}
+
 .st-emotion-cache-4oy321 {
   padding: 1rem;
 }
