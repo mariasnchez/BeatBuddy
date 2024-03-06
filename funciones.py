@@ -178,7 +178,7 @@ def home():
                     </span>
                 </div>
                 <div id="inicio-descrip" class="dm-sans-4"> ¿Listo para dejarte sorprender? Nuestro asistente musical te guiará para descubrir tu canción ideal.  Además, con nuestro reconocimiento facial, te conectaremos con la canción perfecta para complementar tus emociones del momento. Y si quieres explorar más, nuestro voicebot musical está aquí para ti.</div>
-                <a id="btn-empezar" class="dm-sans-4" href="https://beatbuddyapp.streamlit.app/Asistente_Musical">¡Empieza aquí!</a>
+                <a id="btn-empezar" class="dm-sans-4" href="https://beatbuddyapp.streamlit.app/Asistente_Musical" target="_self">¡Empieza aquí!</a>
             </div>
         </div>
         <script>{animejs}</script>
