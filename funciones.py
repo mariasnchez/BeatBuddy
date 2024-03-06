@@ -255,7 +255,7 @@ def prediccion(predicted_emotion):
 #ChatBot
 def chatbot():
     return f"""
-        <div id="recog-body" class="d-flex justify-content-evenly align-items-center px-5">
+        <div id="voicebot-body" class="d-flex justify-content-evenly align-items-center px-5">
             <div id="inicio-beatbuddy" class="w-75 h-20 d-flex flex-column justify-content-evenly align-items-center">
                 <div class="w-200 fs-1 text-center text-white" style="font-family: 'DM Sans', 'Source Sans Pro'"><b>BeatBuddy Chat 💬</b></div>
             </div>
