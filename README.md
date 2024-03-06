@@ -385,7 +385,7 @@ Para el NPL hemos decidido hacer un **voicebot**, pero no un voicebot cualquiera
 ![image](https://github.com/mariasnchez/BeatBuddy/assets/146923531/d33b1b17-5f7d-455a-adfb-8c8ec2ac96e8)
 
 ## 7. Aplicación web <a name="7"></a>
-**Página web:**  
+**Página web:**  https://beatbuddyapp.streamlit.app/
 
 El prototipo de la web lo diseñamos en Figma que se puede ver [aquí](https://www.figma.com/file/R5yJphUSRoNuWchBIt2ZaH/TFM?type=design&node-id=0-1&mode=design&t=aop7T6jbd598DzHx-0).
 
@@ -435,8 +435,10 @@ Así es como estructuramos la página web BeatBuddy.
 ![image](https://github.com/mariasnchez/BeatBuddy/assets/146923531/2748e54b-877f-4278-86a3-cc44e564cd1d)
 
 ## 8. Vídeo <a name="8"></a>
+[Ver vídeo](https://www.youtube.com/watch?v=keWnONllCfY)
 
 ## 9. Presentación <a name="9"></a>
+[Ver presentación](Presentacion_Beat_Buddy.pdf)
 
 ## 10. Porcentaje trabajo realizado <a name="10"></a>
 
