@@ -38,7 +38,10 @@ Hemos empleado un gran número de tecnologías para la realización del proyecto
 
 ## 2. Obtención de datos <a name="2"></a>
 ### ASISTENTE MUSICAL <a name="a2"></a>
-Los datos los hemos recogido mediante **scrapping** ([Ver desarrollo scrapping](/archivos/Spotipy_Scrapping.ipynb)) con la función de la [API de Spotify](https://developer.spotify.com/documentation/web-api/reference/get-audio-features) `audio-features` y tienen el siguiente significado:
+Los datos los hemos recogido mediante **scraping** ([Ver desarrollo scrapping](/archivos/Spotipy_Scrapping.ipynb)) con la función de la [API de Spotify](https://developer.spotify.com/documentation/web-api/reference/get-audio-features) `audio-features`.
+En **total** se han scrapeado unas ***2000 canciones*** de distintos estados de ánimo, energías y décadas musicales. Al rededor de unas **20 playlists de 100 canciones** cada una.
+Los valores que Spotify da a cada una de las canciones se muestra en las columnas que hemos recogido en el DataFrame, que contienen el siguiente significado:
+
 - **loudness**: Se trata de un campo **float** que mide de **0,0 a 1,0** el nivel de **acústica** de la canción. 1,0 representa una confianza alta en que la pista es acústica.
 
 - **analysis_url**: Se trata de un campo **string** que proporciona la **URL** con los detalles de la canción.
@@ -74,6 +77,7 @@ Los datos los hemos recogido mediante **scrapping** ([Ver desarrollo scrapping](
 - **uri**: **String** que muestra la **URI** de la canción.
 
 - **valence**: Se trata de un campo **float** que mide de **0,0 a 1,0** la **positividad** de las **letras** de cada  canción. 1,0 representa una confianza alta en que la canción es positiva al 100%.
+
 - **release_date**: Es un campo tipo **string** que simplemente indica la **fecha de salida** de la canción.
 
 ### RECONOCIMIENTO FACIAL <a name="r2"></a>
