@@ -86,7 +86,7 @@ def home():
         }
         #inicio-beatbuddy {
             width: 50%;
-            height: 40%;
+            height: 50%;
             padding-top: 3%;
             padding-bottom: 3%;
             display: flex;
