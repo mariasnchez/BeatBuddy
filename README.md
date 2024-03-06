@@ -30,7 +30,7 @@ Página web:
 
 
 ## 1. Descripción del proyecto <a name="1"></a>
-BeatBuddy tratará de una aplicación de música personalizada, que servirá como un asistente musical capaz de proporcionar recomendaciones precisas en base a preguntas en un pequeño **formulario** como lo son el estado de ánimo, la actividad o el año, entre otros parámetros. También tendrá una parte en la que se recomendará una canción respecto a la emoción predicha en un **reconocimiento facial** y otra parte de un **Chat de Voz** similar a *Siri* o *Alexa* con el que se podrá tener una experiencia más completa.
+BeatBuddy trata de una aplicación de música personalizada, que servirá como un asistente musical capaz de proporcionar recomendaciones precisas en base a preguntas en un pequeño **formulario** como lo son el estado de ánimo, la actividad o el año. También tendrá una parte en la que se recomendará una canción respecto a la emoción predicha en un **reconocimiento facial** y otra parte de un **Chat de Voz** similar a *Siri* o *Alexa* con el que se podrá tener una experiencia más completa.
 
 Hemos empleado un gran número de tecnologías para la realización del proyecto, en la siguiente imagen se muestran todas las tecnologías utilizadas:
 
