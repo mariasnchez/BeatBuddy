@@ -6,8 +6,6 @@
 Proyecto realizado por [Christian Martín Díaz](https://github.com/chrismartindiaz), [Pablo Martín Trujillo](https://github.com/martintpablo) y [María Eugenia Sánchez Sánchez](https://github.com/mariasnchez).
 
 
-Página web: 
-
 ## Índice
 
 * [1. Descripción del proyecto ](#1)
@@ -25,7 +23,9 @@ Página web:
   * [Reconocimiento facial](#r5)
 * [6. Procesamiento Lenguaje Natural (Voicebot)](#6)
 * [7. Aplicación web](#7)
-* [8. Porcentaje trabajo realizado](#8)
+* [8. Vídeo](#8)
+* [9. Presentación](#9)
+* [10. Porcentaje trabajo realizado](#10)
 
 
 
@@ -192,6 +192,8 @@ Para el NPL hemos decidido hacer un **voicebot**, pero no un voicebot cualquiera
 ![image](https://github.com/mariasnchez/BeatBuddy/assets/146923531/d33b1b17-5f7d-455a-adfb-8c8ec2ac96e8)
 
 ## 7. Aplicación web <a name="7"></a>
+**Página web:**  
+
 El prototipo de la web lo diseñamos en Figma que se puede ver [aquí](https://www.figma.com/file/R5yJphUSRoNuWchBIt2ZaH/TFM?type=design&node-id=0-1&mode=design&t=aop7T6jbd598DzHx-0).
 
 Nuestra página ha sido desarrollada en Streamlit.
@@ -239,7 +241,11 @@ Así es como estructuramos la página web BeatBuddy.
 
 ![image](https://github.com/mariasnchez/BeatBuddy/assets/146923531/2748e54b-877f-4278-86a3-cc44e564cd1d)
 
-## 8. Porcentaje trabajo realizado <a name="8"></a>
+## 8. Vídeo <a name="8"></a>
+
+## 9. Presentación <a name="9"></a>
+
+## 10. Porcentaje trabajo realizado <a name="10"></a>
 
 Hemos trabajado todos por igual, no hay ninguna queja por parte de ninguno de los integrantes del grupo.
 
