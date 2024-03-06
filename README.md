@@ -32,6 +32,10 @@ Página web:
 ## 1. Descripción del proyecto <a name="1"></a>
 BeatBuddy tratará de una aplicación de música personalizada, que servirá como un asistente musical capaz de proporcionar recomendaciones precisas en base a preguntas en un pequeño **formulario** como lo son el estado de ánimo, la actividad o el año, entre otros parámetros. También tendrá una parte en la que se recomendará una canción respecto a la emoción predicha en un **reconocimiento facial** y otra parte de un **Chat de Voz** similar a *Siri* o *Alexa* con el que se podrá tener una experiencia más completa.
 
+Hemos empleado un gran número de tecnologías para la realización del proyecto, en la siguiente imagen se muestran todas las tecnologías utilizadas:
+
+![image](https://github.com/mariasnchez/BeatBuddy/assets/146923531/1213b8c6-2b6d-4ff2-8486-d2a4c41b97ef)
+
 ## 2. Obtención de datos <a name="2"></a>
 ### ASISTENTE MUSICAL <a name="a2"></a>
 Los datos los hemos recogido mediante **scrapping** ([Ver desarrollo scrapping](/archivos/Spotipy_Scrapping.ipynb)) con la función de la [API de Spotify](https://developer.spotify.com/documentation/web-api/reference/get-audio-features) `audio-features` y tienen el siguiente significado:
@@ -124,17 +128,25 @@ Probamos con:
 - KneighborsClassifier (79% precisión)
 - Regresión Logística (98,75% precisión) **Modelo elegido**
 
+![image](https://github.com/mariasnchez/BeatBuddy/assets/146923531/1a159cf5-e6ae-457b-98eb-b40c91dca72a)
+
 #### Entrenamiento para el target `motivation`
 Probamos con:
 - SVClassifier (80% precisión)
 - LinearSVC (98% precisión) **Modelo elegido**
+
+![image](https://github.com/mariasnchez/BeatBuddy/assets/146923531/987c532d-95eb-4578-975f-31985c9795b2)
+
 
 Hemos añadido 100 canciones más por década musical y los unimos a los modelos. 
 
 ### RECONOCIMIENTO FACIAL <a name="r5"></a>
 [Ver desarrollo](/archivos/Reconocimiento_preparacion_datos.ipynb)
 
-Hemos entrenado el modelo con **redes neuronales** utilizando tensorflow y keras. Ha dado un 70% de precisión, pero nos quedamos con el modelo ya que las predicciones que ha fallado son las que no se identifica bien la cara que han puesto. Mientras se muestre claramente la cara, el modelo lo predice correctamente.
+Hemos entrenado el modelo con **redes neuronales** utilizando tensorflow y keras. Ha dado aproximadamente un 73% de precisión, pero nos quedamos con el modelo ya que las predicciones que ha fallado son las que no se identifica bien la cara que han puesto. Mientras se muestre claramente la cara, el modelo lo predice correctamente.
+
+![73_Porciento_Reconocimiento](https://github.com/mariasnchez/BeatBuddy/assets/146923531/26c5060f-3f26-4ad2-b745-fcb7ff6bad05)
+
 
 Aquí un ejemplo con las primeras 64 imágenes (las negras son las predicciones correctas y las naranjas las falladas): 
 
@@ -210,7 +222,14 @@ He aquí algunos ejemplos para:
 
 Así es como estructuramos la página web BeatBuddy. 
 
+Éste es el resultado final de la página de inicio de la web en Streamlit:
+
+![image](https://github.com/mariasnchez/BeatBuddy/assets/146923531/2748e54b-877f-4278-86a3-cc44e564cd1d)
+
 ## 8. Porcentaje trabajo realizado <a name="8"></a>
+
+Hemos trabajado todos por igual, no hay ninguna queja por parte de ninguno de los integrantes del grupo.
+
 Christian: 33%  
 María: 33%  
 Pablo: 33%  
