@@ -355,7 +355,7 @@ Ha dado aproximadamente un 71% de precisión, pero nos quedamos con el modelo ya
 Matriz confusión de la predicción:  
 ![image](https://github.com/mariasnchez/BeatBuddy/assets/91953276/334d901d-fdbc-4bed-ac4a-a8d67cbb0aa2)
 
-Aquí un ejemplo con las primeras 42 imágenes (las negras son las predicciones correctas y las naranjas las falladas):  
+Aquí un ejemplo con las primeras 36 imágenes (las negras son las predicciones correctas y las naranjas las falladas):  
 <img src="/img/entrenamiento.png" width=/>
 
 ## 6. Procesamiento Lenguaje Natural (Voicebot) <a name="6"></a>
