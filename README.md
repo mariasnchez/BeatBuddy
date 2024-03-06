@@ -111,9 +111,17 @@ Hemos leído el dataset, visto las claves del diccionario (`emotion`, `pixels`, 
 ### ASISTENTE MUSICAL <a name="a4"></a>
 [Ver desarrollo](/archivos/Asistente_preparacion_datos.ipynb)
 
-Hemos eliminado los duplicados; utilizado técnicas de *Featuring Engineering* para la **eliminación de columnas innecesarias**, **distingir columnas**, **cambiar nombres**, **eliminación de outliers** y **eliminación de datos vacíos/nulos**; y mostrado las correlaciones tras el tratamiento. 
+En cuanto a la preparación de los datos del asistente musical hemos empleado un gran número de técnicas para que el modelo sea lo más eficaz posible y los datos se muestren de forma intuitiva para los usuarios.
 
-Gráfica correlaciones **tras el tratamiento de datos**:
+- **Eliminación de los duplicados.**
+- **Eliminación de columnas innecesarias.**
+- **Cambio en el nombre de las columnas.**
+- **Reajuste de valores para las columnas.**
+- **Eliminación de datos outliers.**
+- **Eliminación de datos vacíos/nulos.**
+- **Muestra de las nuevas correlaciones tras el tratamiento de los datos.** 
+
+Gráfica de las correlaciones **tras la preparación de los datos**:
 
 <img src="/img/correlaciones_preparacion.png" width=/>
 
