@@ -30,7 +30,7 @@ Página web:
 
 
 ## 1. Descripción del proyecto <a name="1"></a>
-BeatBuddy tratará de una aplicación de música personalizada, que servirá como un asistente musical capaz de proporcionar recomendaciones precisas en base a preguntas como el estado de ánimo, la actividad o el año, entre otros parámetros. También tendrá una parte en la que se recomendará una canción respecto a la emoción predicha en un reconocimiento facial y otra parte de un chatbot integrado con Spotify, con la que se podrá tener una experiencia más completa.
+BeatBuddy tratará de una aplicación de música personalizada, que servirá como un asistente musical capaz de proporcionar recomendaciones precisas en base a preguntas en un pequeño **formulario** como lo son el estado de ánimo, la actividad o el año, entre otros parámetros. También tendrá una parte en la que se recomendará una canción respecto a la emoción predicha en un **reconocimiento facial** y otra parte de un **Chat de Voz** similar a *Siri* o *Alexa* con el que se podrá tener una experiencia más completa.
 
 ## 2. Obtención de datos <a name="2"></a>
 ### ASISTENTE MUSICAL <a name="a2"></a>
@@ -102,9 +102,9 @@ Hemos leído el dataset, visto las claves del diccionario (`emotion`, `pixels`, 
 ### ASISTENTE MUSICAL <a name="a4"></a>
 [Ver desarrollo](/archivos/Asistente_preparacion_datos.ipynb)
 
-Hemos eliminado los duplicados; utilizado técnicas de *Featuring Engineering* para la eliminación de columnas innecesarias, distingir columnas, cambiar nombres, eliminación de outliers y eliminación de datos vacíos/nulos; y mostrado las correlaciones tras el tratamiento. 
+Hemos eliminado los duplicados; utilizado técnicas de *Featuring Engineering* para la **eliminación de columnas innecesarias**, **distingir columnas**, **cambiar nombres**, **eliminación de outliers** y **eliminación de datos vacíos/nulos**; y mostrado las correlaciones tras el tratamiento. 
 
-Gráfica correlaciones:
+Gráfica correlaciones **tras el tratamiento de datos**:
 
 <img src="/img/correlaciones_preparacion.png" width=/>
 
