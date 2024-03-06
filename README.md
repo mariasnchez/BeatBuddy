@@ -41,6 +41,7 @@ Hemos empleado un gran número de tecnologías para la realización del proyecto
 Los datos los hemos recogido mediante **Scraping** ([Ver desarrollo scraping](/archivos/Spotipy_Scrapping.ipynb)) con la función de la [API de Spotify](https://developer.spotify.com/documentation/web-api/reference/get-audio-features) `audio-features`.
 
 En primer lugar, hemos importado las librerías:
+
 ![image](https://github.com/mariasnchez/BeatBuddy/assets/146923531/7c6d54b1-b3ff-48b7-9b35-66075b69eab1)
 
 Luego, sacamos los **metadatos** de las canciones de una playlist.
