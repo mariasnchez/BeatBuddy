@@ -86,12 +86,12 @@ def home():
         }
         #inicio-beatbuddy {
             width: 50%;
-            height: 60%;
+            height: 40%;
             padding-top: 3%;
             padding-bottom: 3%;
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: space-evenly;
             align-items: center;
         }
         #inicio-titulo {
@@ -178,7 +178,6 @@ def home():
                     </span>
                 </div>
                 <div id="inicio-descrip" class="dm-sans-4"> ¿Listo para dejarte sorprender? Nuestro asistente musical te guiará para descubrir tu canción ideal.  Además, con nuestro reconocimiento facial, te conectaremos con la canción perfecta para complementar tus emociones del momento. Y si quieres explorar más, nuestro voicebot musical está aquí para ti.</div>
-                <a id="btn-empezar" class="dm-sans-4" href="https://beatbuddyapp.streamlit.app/Asistente_Musical" target="_self">¡Empieza aquí!</a>
             </div>
         </div>
         <script>{animejs}</script>
