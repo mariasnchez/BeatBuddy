@@ -109,6 +109,7 @@ def home():
             color: #FFFFFF;
         }
         #btn-empezar {
+            margin-top: 15px;
             width: 37%;
             background-color: #9062a6;
             color: #FFFFFF;
