@@ -26,7 +26,7 @@ Proyecto realizado por [Christian Martín Díaz](https://github.com/chrismartind
 * [8. Vídeo](#8)
 * [9. Presentación](#9)
 * [10. Porcentaje trabajo realizado](#10)
-
+* [11. Bibliografía](#11)
 
 
 ## 1. Descripción del proyecto <a name="1"></a>
@@ -435,10 +435,10 @@ Así es como estructuramos la página web BeatBuddy.
 ![image](https://github.com/mariasnchez/BeatBuddy/assets/146923531/2748e54b-877f-4278-86a3-cc44e564cd1d)
 
 ## 8. Vídeo <a name="8"></a>
-[Ver vídeo](https://www.youtube.com/watch?v=keWnONllCfY)
+Enlace al vídeo con la presentación de BeatBuddy: [Ver vídeo](https://www.youtube.com/watch?v=keWnONllCfY)
 
 ## 9. Presentación <a name="9"></a>
-[Ver presentación](Presentacion_Beat_Buddy.pdf)
+Enlace a la presentación de BeatBuddy: [Ver presentación](Presentacion_Beat_Buddy.pdf)
 
 ## 10. Porcentaje trabajo realizado <a name="10"></a>
 
@@ -447,3 +447,15 @@ Hemos trabajado todos por igual, no hay ninguna queja por parte de ninguno de lo
 Christian: 33%  
 María: 33%  
 Pablo: 33%  
+
+## 11. Bibliografía <a name="11"></a>
+
+Éstos son algunos de los enlaces que nos han facilitado el trabajo:
+
+- [Documentación de AnimeJS](https://animejs.com/documentation/)
+- [Documentación Gemini API Key](https://ai.google.dev/docs?hl=es-419)
+- [Documentación de Streamlit](https://docs.streamlit.io/)
+- [Docuemntación de Spotify para desarrolladores](https://developer.spotify.com/documentation/web-api)
+- [Documentación de Spotipy](https://spotipy.readthedocs.io/en/2.22.1/)
+- [Documentación de gTTS](https://gtts.readthedocs.io/en/latest/)
+- [Documentación de Streamlit-AudioRecorder](https://github.com/theevann/streamlit-audiorecorder)
