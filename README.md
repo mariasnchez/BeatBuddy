@@ -81,7 +81,8 @@ Los valores que Spotify da a cada una de las canciones se muestra en las columna
 - **release_date**: Es un campo tipo **string** que simplemente indica la **fecha de salida** de la canción.
 
 ### RECONOCIMIENTO FACIAL <a name="r2"></a>
-Los datos del dataset de kaggle *fer2013.csv* del siguiente enlace: https://www.kaggle.com/datasets/ashishpatel26/facial-expression-recognitionferchallenge
+Los datos para el reconocimiento facial lo hemos sacado de un dataset bastante conocido en el mundo del reconocimiento facial. Se trata del dataset de kaggle *fer2013.csv* del siguiente enlace: https://www.kaggle.com/datasets/ashishpatel26/facial-expression-recognitionferchallenge
+Éste dataset se lleva utilizando bastante tiempo para reconocimiento facial en otros ámbitos, nosotros vamos a implementarlo en el mundo de la música.
 
 En el dataset se encuentran imágenes de 7 expresiones diferentes: enfado, disgusto, miedo, feliz, triste, sorpresa y neutral. Para el reconocimiento nos centraremos en las imágenes de:
 - **Tristeza**
