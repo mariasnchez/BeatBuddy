@@ -95,7 +95,7 @@ audio = audiorecorder("Grabar 🔴", "Parar ⬛", key="recorder")
 language_list = ["Spanish", "English"] 
 language = st.selectbox('', language_list, index=0)
 lang = "en" if language.lower() == "english" else "es" if language.lower() == "spanish" else "auto"
-w = Whisper("base")
+w = Whisper("tiny")
 
 # Mostramos el historial del chat
 for message in st.session_state.chat_session.history:
